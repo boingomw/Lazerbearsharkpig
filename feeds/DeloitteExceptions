@@ -12,7 +12,7 @@
   "reports": [
     {
       "title": "Start or stop Encase Safe", 
-      "timestamp": 1471015034, 
+      "timestamp": 1471016159, 
       "iocs": {
         "query": [
           {
@@ -23,11 +23,11 @@
       }, 
       "score": 1, 
       "link": "https://github.com/boingomw/Lazerbearsharkpig/blob/master/pretty_feed_links/DeloitteExceptions.tsv", 
-      "id": "319f1b603b84e481a03b2c0da5f902fa"
+      "id": "82d13bc5ae20e2478d21a45d77034f38"
     }, 
     {
       "title": "Bluecherry Security Agent", 
-      "timestamp": 1471015034, 
+      "timestamp": 1471016159, 
       "iocs": {
         "query": [
           {
@@ -38,11 +38,11 @@
       }, 
       "score": 1, 
       "link": "https://github.com/boingomw/Lazerbearsharkpig/blob/master/pretty_feed_links/DeloitteExceptions.tsv", 
-      "id": "be87c1c3066ad3770fdeed5bb3621e00"
+      "id": "f76760a097438bb9738c92b5ad8cb7f3"
     }, 
     {
       "title": "Start or stop splunkd", 
-      "timestamp": 1471015034, 
+      "timestamp": 1471016159, 
       "iocs": {
         "query": [
           {
@@ -53,11 +53,11 @@
       }, 
       "score": 1, 
       "link": "https://github.com/boingomw/Lazerbearsharkpig/blob/master/pretty_feed_links/DeloitteExceptions.tsv", 
-      "id": "90b3b042d6d25183373d7a7f630a4a32"
+      "id": "ff54b115def6064dfbc4980ef76fc235"
     }, 
     {
       "title": "Syncthing related", 
-      "timestamp": 1471015034, 
+      "timestamp": 1471016159, 
       "iocs": {
         "query": [
           {
@@ -68,11 +68,11 @@
       }, 
       "score": 1, 
       "link": "https://github.com/boingomw/Lazerbearsharkpig/blob/master/pretty_feed_links/DeloitteExceptions.tsv", 
-      "id": "7802469ceb9fc5138e7e68e56fb2f09a"
+      "id": "0deb930bec0ef9d557e864940e186ffa"
     }, 
     {
       "title": "Synctrazor related", 
-      "timestamp": 1471015034, 
+      "timestamp": 1471016159, 
       "iocs": {
         "query": [
           {
@@ -83,7 +83,7 @@
       }, 
       "score": 1, 
       "link": "https://github.com/boingomw/Lazerbearsharkpig/blob/master/pretty_feed_links/DeloitteExceptions.tsv", 
-      "id": "0c47cb3d83c2a8b97aef9837f95fb2a0"
+      "id": "5fded0bcf74dee5271fa9ab26ed83fda"
     }
   ]
 }

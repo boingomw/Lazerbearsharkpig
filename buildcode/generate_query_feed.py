@@ -59,7 +59,7 @@ def build_reports(queries):
 
     for q in queries:
         m = hashlib.md5()
-        m.update(q['link'] + q['title'])
+        m.update(q['query'] + q['title'])
         report_id = m.hexdigest()
         fields = {'iocs': {
                 'query': [
@@ -122,7 +122,7 @@ def create(query_file, datatype, feedinfosrc='', pretty_output_path=''):
     # lazy way out to get right icon path.  sorry.
     old_cwd = os.getcwd()
     os.chdir(os.path.dirname(os.path.realpath(__file__)))
-    print "got here",feedinfo
+    #print "got here",feedinfo
 
     feedinfo = CbFeedInfo(**feedinfo)
     feed = CbFeed(feedinfo, reports)

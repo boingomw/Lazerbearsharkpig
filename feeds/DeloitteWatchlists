@@ -12,7 +12,7 @@
   "reports": [
     {
       "title": "Non-System_Filemods_to_system32", 
-      "timestamp": 1471015034, 
+      "timestamp": 1471016159, 
       "iocs": {
         "query": [
           {
@@ -23,11 +23,11 @@
       }, 
       "score": 40, 
       "link": "https://github.com/boingomw/Lazerbearsharkpig/blob/master/pretty_feed_links/DeloitteWatchlists.tsv", 
-      "id": "396c7eaee1fd5f137661c83dc282b2c6"
+      "id": "80ffed86e20511b3f7531aaa61d91a89"
     }, 
     {
       "title": "Autoruns", 
-      "timestamp": 1471015034, 
+      "timestamp": 1471016159, 
       "iocs": {
         "query": [
           {
@@ -38,11 +38,11 @@
       }, 
       "score": 20, 
       "link": "https://github.com/boingomw/Lazerbearsharkpig/blob/master/pretty_feed_links/DeloitteWatchlists.tsv", 
-      "id": "961592265b4c4bd1d86868c742712a05"
+      "id": "f9575fad33780f046a38f42eb4f0f056"
     }, 
     {
       "title": "Execution_MS_signed_from_non-default_dirs", 
-      "timestamp": 1471015034, 
+      "timestamp": 1471016159, 
       "iocs": {
         "query": [
           {
@@ -53,11 +53,11 @@
       }, 
       "score": 40, 
       "link": "https://github.com/boingomw/Lazerbearsharkpig/blob/master/pretty_feed_links/DeloitteWatchlists.tsv", 
-      "id": "ad9c2b484727c1f32875fde3946da3a3"
+      "id": "d01e48c92441a9c24fa1dd14a19e13fd"
     }, 
     {
       "title": "Network Connections to Non-loopback - Unsigned binaries", 
-      "timestamp": 1471015034, 
+      "timestamp": 1471016159, 
       "iocs": {
         "query": [
           {
@@ -68,7 +68,7 @@
       }, 
       "score": 70, 
       "link": "https://github.com/boingomw/Lazerbearsharkpig/blob/master/pretty_feed_links/DeloitteWatchlists.tsv", 
-      "id": "65ac664e1c8906fedf76d2b1e0d2fc53"
+      "id": "e8e2b61e726f15c0bf9a7ff477a918fe"
     }
   ]
 }
