@@ -79,3 +79,25 @@ Registry modification to UILanguages,events,Local File,50,regmod:control\MUI\UIL
 Startup Registry Modification (Run*),events,Local File,50,regmod:CurrentVersion\Run*
 Windows Credential Editor usage,events,Local File,50,process_name:wce.exe
 Powershell creating remote threads,events,Local File,50,"crossproc_type:""remotethread"" process_name:powershell.exe"
+Mac-Malware KeRanger,events,Local File,50,process_name:kernel_service AND childproc_name:kernel_service
+Mac-Malware KeRanger,events,Local File,50,process_name:Transmission AND filemod:kernel_service
+Mac-Malware KeRanger,events,Local File,50,filemod:.kernel_pid AND filemod:kernel_time
+Mac-Active Malware,events,Local File,50,"filemod_count:[5000 TO *] -process_name:""Google Chrome"" -process_name:ditto -process_name:installd -process_name:backupd -process_name:mds"
+Mac-Odd commands,events,Local File,50,"os_type:""osx"" cmdline:""dscl .read /Users"" cmdline:dsAttrTypeNative:ShadowHashData "
+Mac-Odd commands,events,Local File,50,"os_type:""osx"" cmdline:""dscl .read /Users"""
+Mac-Odd commands,events,Local File,50,"os_type:""osx"" cmdline:""dscl localhost -passwd /Search/Users/"" "
+Mac-Odd commands,events,Local File,50,"os_type:""osx"" cmdline:""chmod +s "" OR cmdline:""/bin/chmod +s"""
+Mac-Odd Paths,events,Local File,50,"os_type:""osx"" path:.Trashes/*"
+Mac-Odd Paths,events,Local File,50,"os_type:""osx"" path:.Trashes/* netconn_count:[1 TO *] "
+Mac-Odd Paths,events,Local File,50,"os_type:""osx"" path:.Trash/*"
+Mac-Odd Paths,events,Local File,50,"os_type:""osx"" path:.Trash/* netconn_count:[1 TO *] "
+Mac-Odd Parents,events,Local File,50,"os_type:""osx"" process_name:sh parent_process:Firefox"
+Mac-Odd Parents,events,Local File,50,"os_type:""osx"" process_name:sh parent_process:Safari"
+Mac-Odd Parents,events,Local File,50,"os_type:""osx"" process_name:sh parent_name:""Google Chrome"" "
+Mac-Odd commands,events,Local File,50,"os_type:""osx"" process_name:who"
+Mac-Odd commands,events,Local File,50,"os_type:""osx"" process_name:id"
+Mac-Odd commands,events,Local File,50,"os_type:""osx"" process_name:printf"
+Mac-Odd commands,events,Local File,50,"os_type:""osx"" process_name:telnet"
+Mac-Odd commands,events,Local File,50,"os_type:""osx"" process_name:dscl"
+Mac-Odd Actions,events,Local File,50,"os_type:""osx"" filemod:Application\ Support/Google/Chrome/Default/Preferences AND filemod:Application\ Support/Google/Chrome/Default/Extensions/*/manifest.json and -path:""/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"" AND -path:/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/Metadata.framework/Versions/A/Support/mds"
+Mac-Odd Actions,events,Local File,50,"os_type:""osx"" filemod:Library/Safari/Extensions and filemod:Library/Safari/Extensions/extension.safariextz"
