@@ -12,7 +12,7 @@
   "reports": [
     {
       "title": "Execution from AppData folder", 
-      "timestamp": 1471019374, 
+      "timestamp": 1471022073, 
       "iocs": {
         "query": [
           {
@@ -27,7 +27,7 @@
     }, 
     {
       "title": "Shells run by SYSTEM", 
-      "timestamp": 1471019374, 
+      "timestamp": 1471022073, 
       "iocs": {
         "query": [
           {
@@ -42,7 +42,7 @@
     }, 
     {
       "title": "Remote execution utilities e.g. PSExec", 
-      "timestamp": 1471019374, 
+      "timestamp": 1471022073, 
       "iocs": {
         "query": [
           {
@@ -57,7 +57,7 @@
     }, 
     {
       "title": "Firewall Modificiations", 
-      "timestamp": 1471019374, 
+      "timestamp": 1471022073, 
       "iocs": {
         "query": [
           {
@@ -72,7 +72,7 @@
     }, 
     {
       "title": "Vulnerable software that spawned a shell", 
-      "timestamp": 1471019374, 
+      "timestamp": 1471022073, 
       "iocs": {
         "query": [
           {
@@ -87,7 +87,7 @@
     }, 
     {
       "title": "Processes that have VT score > 10, and more than 1 network connection", 
-      "timestamp": 1471019374, 
+      "timestamp": 1471022073, 
       "iocs": {
         "query": [
           {
@@ -102,7 +102,7 @@
     }, 
     {
       "title": "Command prompt started by commonly compromised programs (browsers, Acrobat, Java, etc.) ", 
-      "timestamp": 1471019374, 
+      "timestamp": 1471022073, 
       "iocs": {
         "query": [
           {
@@ -117,7 +117,7 @@
     }, 
     {
       "title": "Any process that spawned a shell", 
-      "timestamp": 1471019374, 
+      "timestamp": 1471022073, 
       "iocs": {
         "query": [
           {
@@ -132,7 +132,7 @@
     }, 
     {
       "title": "Copying binary files via CMD", 
-      "timestamp": 1471019374, 
+      "timestamp": 1471022073, 
       "iocs": {
         "query": [
           {
@@ -147,7 +147,7 @@
     }, 
     {
       "title": "Net use", 
-      "timestamp": 1471019374, 
+      "timestamp": 1471022073, 
       "iocs": {
         "query": [
           {
@@ -162,7 +162,7 @@
     }, 
     {
       "title": "Registry key addition", 
-      "timestamp": 1471019374, 
+      "timestamp": 1471022073, 
       "iocs": {
         "query": [
           {
@@ -177,7 +177,7 @@
     }, 
     {
       "title": "Creating services", 
-      "timestamp": 1471019374, 
+      "timestamp": 1471022073, 
       "iocs": {
         "query": [
           {
@@ -192,7 +192,7 @@
     }, 
     {
       "title": "Adding local users", 
-      "timestamp": 1471019374, 
+      "timestamp": 1471022073, 
       "iocs": {
         "query": [
           {
@@ -207,7 +207,7 @@
     }, 
     {
       "title": "Unsigned binaries creating threads in other processes", 
-      "timestamp": 1471019374, 
+      "timestamp": 1471022073, 
       "iocs": {
         "query": [
           {
@@ -222,7 +222,7 @@
     }, 
     {
       "title": "Sysinternals (-bginfo)", 
-      "timestamp": 1471019374, 
+      "timestamp": 1471022073, 
       "iocs": {
         "query": [
           {
@@ -237,7 +237,7 @@
     }, 
     {
       "title": "Microsoft signed binaries run from unusual paths", 
-      "timestamp": 1471019374, 
+      "timestamp": 1471022073, 
       "iocs": {
         "query": [
           {
@@ -252,7 +252,7 @@
     }, 
     {
       "title": "Unsigned binary spawning svchost.exe", 
-      "timestamp": 1471019374, 
+      "timestamp": 1471022073, 
       "iocs": {
         "query": [
           {
@@ -267,7 +267,7 @@
     }, 
     {
       "title": "Modification to startup folder", 
-      "timestamp": 1471019374, 
+      "timestamp": 1471022073, 
       "iocs": {
         "query": [
           {
@@ -282,7 +282,7 @@
     }, 
     {
       "title": "filemod:\\(null\\)_Post AND filemod:Logs/* AND filemod:cr-silent/* AND modload:open", 
-      "timestamp": 1471019374, 
+      "timestamp": 1471022073, 
       "iocs": {
         "query": [
           {
@@ -297,7 +297,7 @@
     }, 
     {
       "title": "Unsigned files written to Outlook content folder", 
-      "timestamp": 1471019374, 
+      "timestamp": 1471022073, 
       "iocs": {
         "query": [
           {
@@ -312,7 +312,7 @@
     }, 
     {
       "title": "Executable files written to Outlook content folder", 
-      "timestamp": 1471019374, 
+      "timestamp": 1471022073, 
       "iocs": {
         "query": [
           {
@@ -327,7 +327,7 @@
     }, 
     {
       "title": "Modification of executables for accessibility options or sticky keys", 
-      "timestamp": 1471019374, 
+      "timestamp": 1471022073, 
       "iocs": {
         "query": [
           {
@@ -342,7 +342,7 @@
     }, 
     {
       "title": "> 500 file modifications", 
-      "timestamp": 1471019374, 
+      "timestamp": 1471022073, 
       "iocs": {
         "query": [
           {
@@ -357,7 +357,7 @@
     }, 
     {
       "title": "IP traffic on port 3389", 
-      "timestamp": 1471019374, 
+      "timestamp": 1471022073, 
       "iocs": {
         "query": [
           {
@@ -372,7 +372,7 @@
     }, 
     {
       "title": "Web ports used by non-browsers", 
-      "timestamp": 1471019374, 
+      "timestamp": 1471022073, 
       "iocs": {
         "query": [
           {
@@ -387,7 +387,7 @@
     }, 
     {
       "title": "Internet Explorer compromise", 
-      "timestamp": 1471019374, 
+      "timestamp": 1471022073, 
       "iocs": {
         "query": [
           {
@@ -402,7 +402,7 @@
     }, 
     {
       "title": "Not signed binaries initiating connections to public IPs", 
-      "timestamp": 1471019374, 
+      "timestamp": 1471022073, 
       "iocs": {
         "query": [
           {
@@ -417,7 +417,7 @@
     }, 
     {
       "title": "Unsigned binaries initiating connections to public IPs", 
-      "timestamp": 1471019374, 
+      "timestamp": 1471022073, 
       "iocs": {
         "query": [
           {
@@ -432,7 +432,7 @@
     }, 
     {
       "title": "Process spawned via Acrobat", 
-      "timestamp": 1471019374, 
+      "timestamp": 1471022073, 
       "iocs": {
         "query": [
           {
@@ -447,7 +447,7 @@
     }, 
     {
       "title": "Process spawned via browser", 
-      "timestamp": 1471019374, 
+      "timestamp": 1471022073, 
       "iocs": {
         "query": [
           {
@@ -462,7 +462,7 @@
     }, 
     {
       "title": "Process spawned via Java", 
-      "timestamp": 1471019374, 
+      "timestamp": 1471022073, 
       "iocs": {
         "query": [
           {
@@ -477,7 +477,7 @@
     }, 
     {
       "title": "Process spawned via Javaw", 
-      "timestamp": 1471019374, 
+      "timestamp": 1471022073, 
       "iocs": {
         "query": [
           {
@@ -492,7 +492,7 @@
     }, 
     {
       "title": "Process spawned via Outlook", 
-      "timestamp": 1471019374, 
+      "timestamp": 1471022073, 
       "iocs": {
         "query": [
           {
@@ -507,7 +507,7 @@
     }, 
     {
       "title": "Process spawned via Services.exe with >1 network connection", 
-      "timestamp": 1471019374, 
+      "timestamp": 1471022073, 
       "iocs": {
         "query": [
           {
@@ -522,7 +522,7 @@
     }, 
     {
       "title": "Wininit started by something other than smss.exe", 
-      "timestamp": 1471019374, 
+      "timestamp": 1471022073, 
       "iocs": {
         "query": [
           {
@@ -537,7 +537,7 @@
     }, 
     {
       "title": "Unsigned binaries started by taskeng.exe that have network communications with public IP space", 
-      "timestamp": 1471019374, 
+      "timestamp": 1471022073, 
       "iocs": {
         "query": [
           {
@@ -552,7 +552,7 @@
     }, 
     {
       "title": "Taskeng.exe starting at.exe or schtasks.exe", 
-      "timestamp": 1471019374, 
+      "timestamp": 1471022073, 
       "iocs": {
         "query": [
           {
@@ -567,7 +567,7 @@
     }, 
     {
       "title": "Process spawned via Word", 
-      "timestamp": 1471019374, 
+      "timestamp": 1471022073, 
       "iocs": {
         "query": [
           {
@@ -582,7 +582,7 @@
     }, 
     {
       "title": "Process spawned via Word, Excel, PowerPoint, or Acrobat Reader", 
-      "timestamp": 1471019374, 
+      "timestamp": 1471022073, 
       "iocs": {
         "query": [
           {
@@ -597,7 +597,7 @@
     }, 
     {
       "title": "Unsigned binaries executed from drives other than C or D", 
-      "timestamp": 1471019374, 
+      "timestamp": 1471022073, 
       "iocs": {
         "query": [
           {
@@ -612,7 +612,7 @@
     }, 
     {
       "title": "Execution from RECYCLER", 
-      "timestamp": 1471019374, 
+      "timestamp": 1471022073, 
       "iocs": {
         "query": [
           {
@@ -627,7 +627,7 @@
     }, 
     {
       "title": "Execution from System Volume Information", 
-      "timestamp": 1471019374, 
+      "timestamp": 1471022073, 
       "iocs": {
         "query": [
           {
@@ -642,7 +642,7 @@
     }, 
     {
       "title": "Execution from Windows/IME", 
-      "timestamp": 1471019374, 
+      "timestamp": 1471022073, 
       "iocs": {
         "query": [
           {
@@ -657,7 +657,7 @@
     }, 
     {
       "title": "Enumeration of user sessions", 
-      "timestamp": 1471019374, 
+      "timestamp": 1471022073, 
       "iocs": {
         "query": [
           {
@@ -672,7 +672,7 @@
     }, 
     {
       "title": "Suspicious filename (extension hiding)", 
-      "timestamp": 1471019374, 
+      "timestamp": 1471022073, 
       "iocs": {
         "query": [
           {
@@ -687,7 +687,7 @@
     }, 
     {
       "title": "Scheduled task execution", 
-      "timestamp": 1471019374, 
+      "timestamp": 1471022073, 
       "iocs": {
         "query": [
           {
@@ -702,7 +702,7 @@
     }, 
     {
       "title": "CMD shell spawned by Excel", 
-      "timestamp": 1471019374, 
+      "timestamp": 1471022073, 
       "iocs": {
         "query": [
           {
@@ -717,7 +717,7 @@
     }, 
     {
       "title": "Typical troubleshooting / enumeration tools", 
-      "timestamp": 1471019374, 
+      "timestamp": 1471022073, 
       "iocs": {
         "query": [
           {
@@ -732,7 +732,7 @@
     }, 
     {
       "title": "Regedit spawned by process other than explorer", 
-      "timestamp": 1471019374, 
+      "timestamp": 1471022073, 
       "iocs": {
         "query": [
           {
@@ -747,7 +747,7 @@
     }, 
     {
       "title": "FTP usage", 
-      "timestamp": 1471019374, 
+      "timestamp": 1471022073, 
       "iocs": {
         "query": [
           {
@@ -762,7 +762,7 @@
     }, 
     {
       "title": "Internet Explorer run by SYSTEM", 
-      "timestamp": 1471019374, 
+      "timestamp": 1471022073, 
       "iocs": {
         "query": [
           {
@@ -777,7 +777,7 @@
     }, 
     {
       "title": "Suspicious filename (misspelled system files)", 
-      "timestamp": 1471019374, 
+      "timestamp": 1471022073, 
       "iocs": {
         "query": [
           {
@@ -792,7 +792,7 @@
     }, 
     {
       "title": "RDP sessions to external IP space", 
-      "timestamp": 1471019374, 
+      "timestamp": 1471022073, 
       "iocs": {
         "query": [
           {
@@ -807,7 +807,7 @@
     }, 
     {
       "title": "Net.exe started by process other than gpshell.exe", 
-      "timestamp": 1471019374, 
+      "timestamp": 1471022073, 
       "iocs": {
         "query": [
           {
@@ -822,7 +822,7 @@
     }, 
     {
       "title": "Notepad spawning child process", 
-      "timestamp": 1471019374, 
+      "timestamp": 1471022073, 
       "iocs": {
         "query": [
           {
@@ -837,7 +837,7 @@
     }, 
     {
       "title": "Powershell spawning dllhost.exe", 
-      "timestamp": 1471019374, 
+      "timestamp": 1471022073, 
       "iocs": {
         "query": [
           {
@@ -852,7 +852,7 @@
     }, 
     {
       "title": "Powershell Bypass", 
-      "timestamp": 1471019374, 
+      "timestamp": 1471022073, 
       "iocs": {
         "query": [
           {
@@ -867,7 +867,7 @@
     }, 
     {
       "title": "Powershell Encoded Command", 
-      "timestamp": 1471019374, 
+      "timestamp": 1471022073, 
       "iocs": {
         "query": [
           {
@@ -882,7 +882,7 @@
     }, 
     {
       "title": "Powershell IEX", 
-      "timestamp": 1471019374, 
+      "timestamp": 1471022073, 
       "iocs": {
         "query": [
           {
@@ -897,7 +897,7 @@
     }, 
     {
       "title": "Powershell started by rundll32.exe", 
-      "timestamp": 1471019374, 
+      "timestamp": 1471022073, 
       "iocs": {
         "query": [
           {
@@ -912,7 +912,7 @@
     }, 
     {
       "title": "Powershell Download", 
-      "timestamp": 1471019374, 
+      "timestamp": 1471022073, 
       "iocs": {
         "query": [
           {
@@ -927,7 +927,7 @@
     }, 
     {
       "title": "Powershell started by process other than explorer or gpscript", 
-      "timestamp": 1471019374, 
+      "timestamp": 1471022073, 
       "iocs": {
         "query": [
           {
@@ -942,7 +942,7 @@
     }, 
     {
       "title": "RAR usage", 
-      "timestamp": 1471019374, 
+      "timestamp": 1471022073, 
       "iocs": {
         "query": [
           {
@@ -957,7 +957,7 @@
     }, 
     {
       "title": "Robocopy usage", 
-      "timestamp": 1471019374, 
+      "timestamp": 1471022073, 
       "iocs": {
         "query": [
           {
@@ -972,7 +972,7 @@
     }, 
     {
       "title": "Runas usage", 
-      "timestamp": 1471019374, 
+      "timestamp": 1471022073, 
       "iocs": {
         "query": [
           {
@@ -987,7 +987,7 @@
     }, 
     {
       "title": "Rundll32 usage", 
-      "timestamp": 1471019374, 
+      "timestamp": 1471022073, 
       "iocs": {
         "query": [
           {
@@ -1002,7 +1002,7 @@
     }, 
     {
       "title": "Rundll32 used to run html", 
-      "timestamp": 1471019374, 
+      "timestamp": 1471022073, 
       "iocs": {
         "query": [
           {
@@ -1017,7 +1017,7 @@
     }, 
     {
       "title": "Rundll32 used to run javascript", 
-      "timestamp": 1471019374, 
+      "timestamp": 1471022073, 
       "iocs": {
         "query": [
           {
@@ -1032,7 +1032,7 @@
     }, 
     {
       "title": "Smss started by suspicious process", 
-      "timestamp": 1471019374, 
+      "timestamp": 1471022073, 
       "iocs": {
         "query": [
           {
@@ -1047,7 +1047,7 @@
     }, 
     {
       "title": "Svchost with unusual username", 
-      "timestamp": 1471019374, 
+      "timestamp": 1471022073, 
       "iocs": {
         "query": [
           {
@@ -1062,7 +1062,7 @@
     }, 
     {
       "title": "WMIC usage", 
-      "timestamp": 1471019374, 
+      "timestamp": 1471022073, 
       "iocs": {
         "query": [
           {
@@ -1077,7 +1077,7 @@
     }, 
     {
       "title": "Wscript usage", 
-      "timestamp": 1471019374, 
+      "timestamp": 1471022073, 
       "iocs": {
         "query": [
           {
@@ -1092,7 +1092,7 @@
     }, 
     {
       "title": "Registry modification to context menu", 
-      "timestamp": 1471019374, 
+      "timestamp": 1471022073, 
       "iocs": {
         "query": [
           {
@@ -1107,7 +1107,7 @@
     }, 
     {
       "title": "Startup Registry Modification (Run)", 
-      "timestamp": 1471019374, 
+      "timestamp": 1471022073, 
       "iocs": {
         "query": [
           {
@@ -1122,7 +1122,7 @@
     }, 
     {
       "title": "Startup Registry Modification (RunOnce)", 
-      "timestamp": 1471019374, 
+      "timestamp": 1471022073, 
       "iocs": {
         "query": [
           {
@@ -1137,7 +1137,7 @@
     }, 
     {
       "title": "Registry modification to Hidden entry by process other than explorer", 
-      "timestamp": 1471019374, 
+      "timestamp": 1471022073, 
       "iocs": {
         "query": [
           {
@@ -1152,7 +1152,7 @@
     }, 
     {
       "title": "Registry modification to UILanguages", 
-      "timestamp": 1471019374, 
+      "timestamp": 1471022073, 
       "iocs": {
         "query": [
           {
@@ -1167,7 +1167,7 @@
     }, 
     {
       "title": "Startup Registry Modification (Run*)", 
-      "timestamp": 1471019374, 
+      "timestamp": 1471022073, 
       "iocs": {
         "query": [
           {
@@ -1182,7 +1182,7 @@
     }, 
     {
       "title": "Windows Credential Editor usage", 
-      "timestamp": 1471019374, 
+      "timestamp": 1471022073, 
       "iocs": {
         "query": [
           {
@@ -1197,7 +1197,7 @@
     }, 
     {
       "title": "Powershell creating remote threads", 
-      "timestamp": 1471019374, 
+      "timestamp": 1471022073, 
       "iocs": {
         "query": [
           {
@@ -1212,7 +1212,7 @@
     }, 
     {
       "title": "Mac-Malware KeRanger 1", 
-      "timestamp": 1471019374, 
+      "timestamp": 1471022073, 
       "iocs": {
         "query": [
           {
@@ -1227,7 +1227,7 @@
     }, 
     {
       "title": "Mac-Malware KeRanger 2", 
-      "timestamp": 1471019374, 
+      "timestamp": 1471022073, 
       "iocs": {
         "query": [
           {
@@ -1242,7 +1242,7 @@
     }, 
     {
       "title": "Mac-Malware KeRanger 3", 
-      "timestamp": 1471019374, 
+      "timestamp": 1471022073, 
       "iocs": {
         "query": [
           {
@@ -1257,7 +1257,7 @@
     }, 
     {
       "title": "Mac-Active Malware Ransomware", 
-      "timestamp": 1471019374, 
+      "timestamp": 1471022073, 
       "iocs": {
         "query": [
           {
@@ -1272,7 +1272,7 @@
     }, 
     {
       "title": "Mac-Odd commands dscl 1", 
-      "timestamp": 1471019374, 
+      "timestamp": 1471022073, 
       "iocs": {
         "query": [
           {
@@ -1287,7 +1287,7 @@
     }, 
     {
       "title": "Mac-Odd commands dscl 2", 
-      "timestamp": 1471019374, 
+      "timestamp": 1471022073, 
       "iocs": {
         "query": [
           {
@@ -1302,7 +1302,7 @@
     }, 
     {
       "title": "Mac-Odd commands dscl 3", 
-      "timestamp": 1471019374, 
+      "timestamp": 1471022073, 
       "iocs": {
         "query": [
           {
@@ -1317,7 +1317,7 @@
     }, 
     {
       "title": "Mac-Odd commands chmod 1", 
-      "timestamp": 1471019374, 
+      "timestamp": 1471022073, 
       "iocs": {
         "query": [
           {
@@ -1332,7 +1332,7 @@
     }, 
     {
       "title": "Mac-Odd Paths trashes", 
-      "timestamp": 1471019374, 
+      "timestamp": 1471022073, 
       "iocs": {
         "query": [
           {
@@ -1347,7 +1347,7 @@
     }, 
     {
       "title": "Mac-Odd Paths trashes with netcon", 
-      "timestamp": 1471019374, 
+      "timestamp": 1471022073, 
       "iocs": {
         "query": [
           {
@@ -1362,7 +1362,7 @@
     }, 
     {
       "title": "Mac-Odd Paths Trash", 
-      "timestamp": 1471019374, 
+      "timestamp": 1471022073, 
       "iocs": {
         "query": [
           {
@@ -1377,7 +1377,7 @@
     }, 
     {
       "title": "Mac-Odd Paths Trash with netcon", 
-      "timestamp": 1471019374, 
+      "timestamp": 1471022073, 
       "iocs": {
         "query": [
           {
@@ -1392,7 +1392,7 @@
     }, 
     {
       "title": "Mac-Odd Parents firefox", 
-      "timestamp": 1471019374, 
+      "timestamp": 1471022073, 
       "iocs": {
         "query": [
           {
@@ -1407,7 +1407,7 @@
     }, 
     {
       "title": "Mac-Odd Parents safari", 
-      "timestamp": 1471019374, 
+      "timestamp": 1471022073, 
       "iocs": {
         "query": [
           {
@@ -1422,7 +1422,7 @@
     }, 
     {
       "title": "Mac-Odd Parents chrome", 
-      "timestamp": 1471019374, 
+      "timestamp": 1471022073, 
       "iocs": {
         "query": [
           {
@@ -1437,7 +1437,7 @@
     }, 
     {
       "title": "Mac-Odd commands who", 
-      "timestamp": 1471019374, 
+      "timestamp": 1471022073, 
       "iocs": {
         "query": [
           {
@@ -1452,7 +1452,7 @@
     }, 
     {
       "title": "Mac-Odd commands id", 
-      "timestamp": 1471019374, 
+      "timestamp": 1471022073, 
       "iocs": {
         "query": [
           {
@@ -1467,7 +1467,7 @@
     }, 
     {
       "title": "Mac-Odd commands printf", 
-      "timestamp": 1471019374, 
+      "timestamp": 1471022073, 
       "iocs": {
         "query": [
           {
@@ -1482,7 +1482,7 @@
     }, 
     {
       "title": "Mac-Odd commands telnet", 
-      "timestamp": 1471019374, 
+      "timestamp": 1471022073, 
       "iocs": {
         "query": [
           {
@@ -1497,7 +1497,7 @@
     }, 
     {
       "title": "Mac-Odd commands dscl, any", 
-      "timestamp": 1471019374, 
+      "timestamp": 1471022073, 
       "iocs": {
         "query": [
           {
@@ -1512,7 +1512,7 @@
     }, 
     {
       "title": "Mac-Odd Actions chrome", 
-      "timestamp": 1471019374, 
+      "timestamp": 1471022073, 
       "iocs": {
         "query": [
           {
@@ -1527,7 +1527,7 @@
     }, 
     {
       "title": "Mac-Odd Actions", 
-      "timestamp": 1471019374, 
+      "timestamp": 1471022073, 
       "iocs": {
         "query": [
           {
