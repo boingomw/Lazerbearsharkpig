@@ -12,1533 +12,1533 @@
   "reports": [
     {
       "title": "Execution from AppData folder", 
-      "timestamp": 1471016159, 
+      "timestamp": 1471019374, 
       "iocs": {
         "query": [
           {
             "index_type": "events", 
-            "search_query": "cb.urlver=1&q=%28path%3Aappdata%5C%2A%20or%20path%3AApplication%20Data%5C%2A%29"
+            "search_query": "cb.urlver=1&q=%28path%3Aappdata%5C%2A%20or%20path%3AApplication%20Data%5C%2A%29%20-alliance_score_deloitteexceptions%3A%5B1%20TO%20%2A%5D"
           }
         ]
       }, 
       "score": 50, 
-      "link": "Local File", 
-      "id": "0e5a019a3de1dd8bd0c9359d953b0be1"
+      "link": "https://github.com/boingomw/Lazerbearsharkpig/blob/master/pretty_feed_links/DeloitteHunting.tsv", 
+      "id": "fbca3be0831e073659581fbf60e443a3"
     }, 
     {
       "title": "Shells run by SYSTEM", 
-      "timestamp": 1471016159, 
+      "timestamp": 1471019374, 
       "iocs": {
         "query": [
           {
             "index_type": "events", 
-            "search_query": "cb.urlver=1&q=%28process_name%3Apowershell.exe%20OR%20process_name%3Acmd.exe%29%20username%3Asystem"
+            "search_query": "cb.urlver=1&q=%28process_name%3Apowershell.exe%20OR%20process_name%3Acmd.exe%29%20username%3Asystem%20-alliance_score_deloitteexceptions%3A%5B1%20TO%20%2A%5D"
           }
         ]
       }, 
       "score": 50, 
-      "link": "Local File", 
-      "id": "d1e8fb23eb3be733885fe6c72dc32599"
+      "link": "https://github.com/boingomw/Lazerbearsharkpig/blob/master/pretty_feed_links/DeloitteHunting.tsv", 
+      "id": "4d43b53f97c04e9887dd36cd04e1af6e"
     }, 
     {
       "title": "Remote execution utilities e.g. PSExec", 
-      "timestamp": 1471016159, 
+      "timestamp": 1471019374, 
       "iocs": {
         "query": [
           {
             "index_type": "events", 
-            "search_query": "cb.urlver=1&q=%28process_name%3Apsexec.exe%20OR%20process_name%3Arexec.exe%20OR%20process_name%3Arcmd.exe%20or%20process_name%3Axcmd.exe%29"
+            "search_query": "cb.urlver=1&q=%28process_name%3Apsexec.exe%20OR%20process_name%3Arexec.exe%20OR%20process_name%3Arcmd.exe%20or%20process_name%3Axcmd.exe%29%20-alliance_score_deloitteexceptions%3A%5B1%20TO%20%2A%5D"
           }
         ]
       }, 
       "score": 50, 
-      "link": "Local File", 
-      "id": "10f12cd9ebe882a89e5b2148cde7ed1b"
+      "link": "https://github.com/boingomw/Lazerbearsharkpig/blob/master/pretty_feed_links/DeloitteHunting.tsv", 
+      "id": "7f528ef842e77aa8f3b612cbb02952d9"
     }, 
     {
       "title": "Firewall Modificiations", 
-      "timestamp": 1471016159, 
+      "timestamp": 1471019374, 
       "iocs": {
         "query": [
           {
             "index_type": "events", 
-            "search_query": "cb.urlver=1&q=%28regmod%3A%5Cregistry%5Cmachine%5CSYSTEM%5C%2A%5Cservices%5CSharedAccess%5C%2A%5CFirewallPolicy%5C%2A%5CEnableFirewall%20AND%20-process_name%3Asvchost.exe%29%20OR%20%28cmdline%3Anetsh%20AND%20cmdline%3Aadvfirewall%29"
+            "search_query": "cb.urlver=1&q=%28regmod%3A%5Cregistry%5Cmachine%5CSYSTEM%5C%2A%5Cservices%5CSharedAccess%5C%2A%5CFirewallPolicy%5C%2A%5CEnableFirewall%20AND%20-process_name%3Asvchost.exe%29%20OR%20%28cmdline%3Anetsh%20AND%20cmdline%3Aadvfirewall%29%20-alliance_score_deloitteexceptions%3A%5B1%20TO%20%2A%5D"
           }
         ]
       }, 
       "score": 50, 
-      "link": "Local File", 
-      "id": "4ee09f0dca874b5562f315763a35a668"
+      "link": "https://github.com/boingomw/Lazerbearsharkpig/blob/master/pretty_feed_links/DeloitteHunting.tsv", 
+      "id": "f8a88069c60dfb9f98c53598c20760dc"
     }, 
     {
       "title": "Vulnerable software that spawned a shell", 
-      "timestamp": 1471016159, 
+      "timestamp": 1471019374, 
       "iocs": {
         "query": [
           {
             "index_type": "events", 
-            "search_query": "cb.urlver=1&q=alliance_score_nvd%3A%2A%20AND%20%28childproc_name%3Apowershell.exe%20OR%20childproc_name%3Acmd.exe%29"
+            "search_query": "cb.urlver=1&q=alliance_score_nvd%3A%2A%20AND%20%28childproc_name%3Apowershell.exe%20OR%20childproc_name%3Acmd.exe%29%20-alliance_score_deloitteexceptions%3A%5B1%20TO%20%2A%5D"
           }
         ]
       }, 
       "score": 50, 
-      "link": "Local File", 
-      "id": "3337ec1af2af7bd751177009c6cd6617"
+      "link": "https://github.com/boingomw/Lazerbearsharkpig/blob/master/pretty_feed_links/DeloitteHunting.tsv", 
+      "id": "00e0e459ac17716c2a0261c5e809fcc2"
     }, 
     {
       "title": "Processes that have VT score > 10, and more than 1 network connection", 
-      "timestamp": 1471016159, 
+      "timestamp": 1471019374, 
       "iocs": {
         "query": [
           {
             "index_type": "events", 
-            "search_query": "cb.urlver=1&q=alliance_score_virustotal%3A%5B10%20TO%20%2A%5D%20AND%20netconn_count%3A%5B1%20TO%20%2A%5D"
+            "search_query": "cb.urlver=1&q=alliance_score_virustotal%3A%5B10%20TO%20%2A%5D%20AND%20netconn_count%3A%5B1%20TO%20%2A%5D%20-alliance_score_deloitteexceptions%3A%5B1%20TO%20%2A%5D"
           }
         ]
       }, 
       "score": 50, 
-      "link": "Local File", 
-      "id": "2f8dec16bfdbfbd175469cbb2257d4a6"
+      "link": "https://github.com/boingomw/Lazerbearsharkpig/blob/master/pretty_feed_links/DeloitteHunting.tsv", 
+      "id": "250d4843856972a230f4f0d5f0f0d1c9"
     }, 
     {
       "title": "Command prompt started by commonly compromised programs (browsers, Acrobat, Java, etc.) ", 
-      "timestamp": 1471016159, 
+      "timestamp": 1471019374, 
       "iocs": {
         "query": [
           {
             "index_type": "events", 
-            "search_query": "cb.urlver=1&q=childproc_name%3Acmd.exe%20AND%20%28parent_name%3Aiexplore.exe%20OR%20parent_name%3Afirefox.exe%20OR%20parent_name%3Achrome.exe%20OR%20parent_name%3Aacrord32.exe%20OR%20parent_name%3Ajava.exe%20OR%20parent_name%3Ajavaw.exe%20OR%20parent_name%3A%2Aflash%2A%29"
+            "search_query": "cb.urlver=1&q=childproc_name%3Acmd.exe%20AND%20%28parent_name%3Aiexplore.exe%20OR%20parent_name%3Afirefox.exe%20OR%20parent_name%3Achrome.exe%20OR%20parent_name%3Aacrord32.exe%20OR%20parent_name%3Ajava.exe%20OR%20parent_name%3Ajavaw.exe%20OR%20parent_name%3A%2Aflash%2A%29%20-alliance_score_deloitteexceptions%3A%5B1%20TO%20%2A%5D"
           }
         ]
       }, 
       "score": 50, 
-      "link": "Local File", 
-      "id": "abe4e7201e35641a0382144f439766e5"
+      "link": "https://github.com/boingomw/Lazerbearsharkpig/blob/master/pretty_feed_links/DeloitteHunting.tsv", 
+      "id": "150340e3b621bd343ce885c347264142"
     }, 
     {
       "title": "Any process that spawned a shell", 
-      "timestamp": 1471016159, 
+      "timestamp": 1471019374, 
       "iocs": {
         "query": [
           {
             "index_type": "events", 
-            "search_query": "cb.urlver=1&q=childproc_name%3Apowershell.exe%20OR%20childproc_name%3Acmd.exe"
+            "search_query": "cb.urlver=1&q=childproc_name%3Apowershell.exe%20OR%20childproc_name%3Acmd.exe%20-alliance_score_deloitteexceptions%3A%5B1%20TO%20%2A%5D"
           }
         ]
       }, 
       "score": 50, 
-      "link": "Local File", 
-      "id": "414aaa87092b101eccef26cdc956aff8"
+      "link": "https://github.com/boingomw/Lazerbearsharkpig/blob/master/pretty_feed_links/DeloitteHunting.tsv", 
+      "id": "90e128cc84743dc43a2d9e72e99d00e7"
     }, 
     {
       "title": "Copying binary files via CMD", 
-      "timestamp": 1471016159, 
+      "timestamp": 1471019374, 
       "iocs": {
         "query": [
           {
             "index_type": "events", 
-            "search_query": "cb.urlver=1&q=cmdline%3A%22copy%20%2Fb%22"
+            "search_query": "cb.urlver=1&q=cmdline%3A%22copy%20%2Fb%22%20-alliance_score_deloitteexceptions%3A%5B1%20TO%20%2A%5D"
           }
         ]
       }, 
       "score": 50, 
-      "link": "Local File", 
-      "id": "57ef72f947da7795d5d4ab686f3544b6"
+      "link": "https://github.com/boingomw/Lazerbearsharkpig/blob/master/pretty_feed_links/DeloitteHunting.tsv", 
+      "id": "2d7d26d38447862fd39ce2a53129c7be"
     }, 
     {
       "title": "Net use", 
-      "timestamp": 1471016159, 
+      "timestamp": 1471019374, 
       "iocs": {
         "query": [
           {
             "index_type": "events", 
-            "search_query": "cb.urlver=1&q=cmdline%3A%22net%20use%22"
+            "search_query": "cb.urlver=1&q=cmdline%3A%22net%20use%22%20-alliance_score_deloitteexceptions%3A%5B1%20TO%20%2A%5D"
           }
         ]
       }, 
       "score": 50, 
-      "link": "Local File", 
-      "id": "6967f03fa77ba575f0f42f5abd6f7aa9"
+      "link": "https://github.com/boingomw/Lazerbearsharkpig/blob/master/pretty_feed_links/DeloitteHunting.tsv", 
+      "id": "012f590147156e7c64e85ba50a0a5a8a"
     }, 
     {
       "title": "Registry key addition", 
-      "timestamp": 1471016159, 
+      "timestamp": 1471019374, 
       "iocs": {
         "query": [
           {
             "index_type": "events", 
-            "search_query": "cb.urlver=1&q=cmdline%3A%22reg%22%20AND%20cmdline%3A%22add%22"
+            "search_query": "cb.urlver=1&q=cmdline%3A%22reg%22%20AND%20cmdline%3A%22add%22%20-alliance_score_deloitteexceptions%3A%5B1%20TO%20%2A%5D"
           }
         ]
       }, 
       "score": 50, 
-      "link": "Local File", 
-      "id": "3eafb4a002bbcfb695af8ad86ebff390"
+      "link": "https://github.com/boingomw/Lazerbearsharkpig/blob/master/pretty_feed_links/DeloitteHunting.tsv", 
+      "id": "80dcf8ef5d084b224b8cbf6374b2c6b9"
     }, 
     {
       "title": "Creating services", 
-      "timestamp": 1471016159, 
+      "timestamp": 1471019374, 
       "iocs": {
         "query": [
           {
             "index_type": "events", 
-            "search_query": "cb.urlver=1&q=cmdline%3A%22sc%20create%22"
+            "search_query": "cb.urlver=1&q=cmdline%3A%22sc%20create%22%20-alliance_score_deloitteexceptions%3A%5B1%20TO%20%2A%5D"
           }
         ]
       }, 
       "score": 50, 
-      "link": "Local File", 
-      "id": "d3e7f90f3f4cb64c482dbc906462a450"
+      "link": "https://github.com/boingomw/Lazerbearsharkpig/blob/master/pretty_feed_links/DeloitteHunting.tsv", 
+      "id": "c66e10c87c02767527f4824dba14f122"
     }, 
     {
       "title": "Adding local users", 
-      "timestamp": 1471016159, 
+      "timestamp": 1471019374, 
       "iocs": {
         "query": [
           {
             "index_type": "events", 
-            "search_query": "cb.urlver=1&q=cmdline%3Anet%20AND%20%28cmdline%3Auser%20OR%20cmdline%3Alocalgroup%29%20AND%20cmdline%3A%2Fadd"
+            "search_query": "cb.urlver=1&q=cmdline%3Anet%20AND%20%28cmdline%3Auser%20OR%20cmdline%3Alocalgroup%29%20AND%20cmdline%3A%2Fadd%20-alliance_score_deloitteexceptions%3A%5B1%20TO%20%2A%5D"
           }
         ]
       }, 
       "score": 50, 
-      "link": "Local File", 
-      "id": "a73aba566eafa8c11806b7e46fc91cf6"
+      "link": "https://github.com/boingomw/Lazerbearsharkpig/blob/master/pretty_feed_links/DeloitteHunting.tsv", 
+      "id": "4c625495a4d65db331eaa054307a6490"
     }, 
     {
       "title": "Unsigned binaries creating threads in other processes", 
-      "timestamp": 1471016159, 
+      "timestamp": 1471019374, 
       "iocs": {
         "query": [
           {
             "index_type": "events", 
-            "search_query": "cb.urlver=1&q=crossproc_type%3A%22remotethread%22%20-digsig_result%3ASigned"
+            "search_query": "cb.urlver=1&q=crossproc_type%3A%22remotethread%22%20-digsig_result%3ASigned%20-alliance_score_deloitteexceptions%3A%5B1%20TO%20%2A%5D"
           }
         ]
       }, 
       "score": 50, 
-      "link": "Local File", 
-      "id": "74b7274a864a9632b7957cbb87d0595d"
+      "link": "https://github.com/boingomw/Lazerbearsharkpig/blob/master/pretty_feed_links/DeloitteHunting.tsv", 
+      "id": "ddd70ce0a27cdc38bbd8c7553002050b"
     }, 
     {
       "title": "Sysinternals (-bginfo)", 
-      "timestamp": 1471016159, 
+      "timestamp": 1471019374, 
       "iocs": {
         "query": [
           {
             "index_type": "events", 
-            "search_query": "cb.urlver=1&q=digsig_prog_name%3A%22Sysinternals%20Utilities%22%20-process_name%3Abginfo.exe"
+            "search_query": "cb.urlver=1&q=digsig_prog_name%3A%22Sysinternals%20Utilities%22%20-process_name%3Abginfo.exe%20-alliance_score_deloitteexceptions%3A%5B1%20TO%20%2A%5D"
           }
         ]
       }, 
       "score": 50, 
-      "link": "Local File", 
-      "id": "c85ad4a6d7d83596a26351614a538661"
+      "link": "https://github.com/boingomw/Lazerbearsharkpig/blob/master/pretty_feed_links/DeloitteHunting.tsv", 
+      "id": "1163724842f0d0b0d5ffb16c8d79cfa5"
     }, 
     {
       "title": "Microsoft signed binaries run from unusual paths", 
-      "timestamp": 1471016159, 
+      "timestamp": 1471019374, 
       "iocs": {
         "query": [
           {
             "index_type": "events", 
-            "search_query": "cb.urlver=1&q=digsig_publisher%3A%22Microsoft%20Corporation%22%20AND%20-path%3Awindows%2A%20AND%20-path%3Aprogram%5C%20files%2A"
+            "search_query": "cb.urlver=1&q=digsig_publisher%3A%22Microsoft%20Corporation%22%20AND%20-path%3Awindows%2A%20AND%20-path%3Aprogram%5C%20files%2A%20-alliance_score_deloitteexceptions%3A%5B1%20TO%20%2A%5D"
           }
         ]
       }, 
       "score": 50, 
-      "link": "Local File", 
-      "id": "a72f2b4f0b00e7d26fbbd41d853e44ad"
+      "link": "https://github.com/boingomw/Lazerbearsharkpig/blob/master/pretty_feed_links/DeloitteHunting.tsv", 
+      "id": "70f1cb8e9a725f45d361097f01b16fbd"
     }, 
     {
       "title": "Unsigned binary spawning svchost.exe", 
-      "timestamp": 1471016159, 
+      "timestamp": 1471019374, 
       "iocs": {
         "query": [
           {
             "index_type": "events", 
-            "search_query": "cb.urlver=1&q=digsig_result%3A%22Unsigned%22%20childproc_name%3Asvchost.exe"
+            "search_query": "cb.urlver=1&q=digsig_result%3A%22Unsigned%22%20childproc_name%3Asvchost.exe%20-alliance_score_deloitteexceptions%3A%5B1%20TO%20%2A%5D"
           }
         ]
       }, 
       "score": 50, 
-      "link": "Local File", 
-      "id": "3005c80384eb3c0e7c58eb205cb54239"
+      "link": "https://github.com/boingomw/Lazerbearsharkpig/blob/master/pretty_feed_links/DeloitteHunting.tsv", 
+      "id": "db8fdca143196d332a11da6f915981e3"
     }, 
     {
       "title": "Modification to startup folder", 
-      "timestamp": 1471016159, 
+      "timestamp": 1471019374, 
       "iocs": {
         "query": [
           {
             "index_type": "events", 
-            "search_query": "cb.urlver=1&q=filemod%3A%22Start%20Menu%5CPrograms%5CStartup%22"
+            "search_query": "cb.urlver=1&q=filemod%3A%22Start%20Menu%5CPrograms%5CStartup%22%20-alliance_score_deloitteexceptions%3A%5B1%20TO%20%2A%5D"
           }
         ]
       }, 
       "score": 50, 
-      "link": "Local File", 
-      "id": "05828101dc9f585687035d599f01244f"
+      "link": "https://github.com/boingomw/Lazerbearsharkpig/blob/master/pretty_feed_links/DeloitteHunting.tsv", 
+      "id": "a38d2199eeaf3b70a47800511920521c"
     }, 
     {
       "title": "filemod:\\(null\\)_Post AND filemod:Logs/* AND filemod:cr-silent/* AND modload:open", 
-      "timestamp": 1471016159, 
+      "timestamp": 1471019374, 
       "iocs": {
         "query": [
           {
             "index_type": "events", 
-            "search_query": "cb.urlver=1&q=filemod%3A%5C%28null%5C%29_Post%20AND%20filemod%3ALogs%2F%2A%20AND%20filemod%3Acr-silent%2F%2A%20AND%20modload%3Aopen"
+            "search_query": "cb.urlver=1&q=filemod%3A%5C%28null%5C%29_Post%20AND%20filemod%3ALogs%2F%2A%20AND%20filemod%3Acr-silent%2F%2A%20AND%20modload%3Aopen%20-alliance_score_deloitteexceptions%3A%5B1%20TO%20%2A%5D"
           }
         ]
       }, 
       "score": 50, 
-      "link": "Local File", 
-      "id": "98ab249bddf5454f52d56f302c3bcac6"
+      "link": "https://github.com/boingomw/Lazerbearsharkpig/blob/master/pretty_feed_links/DeloitteHunting.tsv", 
+      "id": "b5cf97cfae1ebd6839101461e386cc7d"
     }, 
     {
       "title": "Unsigned files written to Outlook content folder", 
-      "timestamp": 1471016159, 
+      "timestamp": 1471019374, 
       "iocs": {
         "query": [
           {
             "index_type": "events", 
-            "search_query": "cb.urlver=1&q=filemod%3AContent.Outlook%5C%2A%20and%20-digsig_result_filewrite%3ASigned"
+            "search_query": "cb.urlver=1&q=filemod%3AContent.Outlook%5C%2A%20and%20-digsig_result_filewrite%3ASigned%20-alliance_score_deloitteexceptions%3A%5B1%20TO%20%2A%5D"
           }
         ]
       }, 
       "score": 50, 
-      "link": "Local File", 
-      "id": "c128be0dc9e6b94c473a8dc91104ca76"
+      "link": "https://github.com/boingomw/Lazerbearsharkpig/blob/master/pretty_feed_links/DeloitteHunting.tsv", 
+      "id": "e817e8c8e469105cad065609594db194"
     }, 
     {
       "title": "Executable files written to Outlook content folder", 
-      "timestamp": 1471016159, 
+      "timestamp": 1471019374, 
       "iocs": {
         "query": [
           {
             "index_type": "events", 
-            "search_query": "cb.urlver=1&q=filemod%3AContent.Outlook%5C%2A%20and%20is_executable_image_filewrite%3ATrue"
+            "search_query": "cb.urlver=1&q=filemod%3AContent.Outlook%5C%2A%20and%20is_executable_image_filewrite%3ATrue%20-alliance_score_deloitteexceptions%3A%5B1%20TO%20%2A%5D"
           }
         ]
       }, 
       "score": 50, 
-      "link": "Local File", 
-      "id": "6a53d11528f6455c2aa536ecb52220f9"
+      "link": "https://github.com/boingomw/Lazerbearsharkpig/blob/master/pretty_feed_links/DeloitteHunting.tsv", 
+      "id": "ffa118679e4ac45e985240f09e84a1b7"
     }, 
     {
       "title": "Modification of executables for accessibility options or sticky keys", 
-      "timestamp": 1471016159, 
+      "timestamp": 1471019374, 
       "iocs": {
         "query": [
           {
             "index_type": "events", 
-            "search_query": "cb.urlver=1&q=filemod%3Awindows%2Fsystem32%2Fsethc.exe%20OR%20filemod%3Awindows%2Fsystem32%2Futilman.exe"
+            "search_query": "cb.urlver=1&q=filemod%3Awindows%2Fsystem32%2Fsethc.exe%20OR%20filemod%3Awindows%2Fsystem32%2Futilman.exe%20-alliance_score_deloitteexceptions%3A%5B1%20TO%20%2A%5D"
           }
         ]
       }, 
       "score": 50, 
-      "link": "Local File", 
-      "id": "949178906a80eaca03ef9a0f92ff2268"
+      "link": "https://github.com/boingomw/Lazerbearsharkpig/blob/master/pretty_feed_links/DeloitteHunting.tsv", 
+      "id": "20288827cee5d6bce65c877fa3068323"
     }, 
     {
       "title": "> 500 file modifications", 
-      "timestamp": 1471016159, 
+      "timestamp": 1471019374, 
       "iocs": {
         "query": [
           {
             "index_type": "events", 
-            "search_query": "cb.urlver=1&q=filemod_count%3A%5B500%20TO%20%2A%5D"
+            "search_query": "cb.urlver=1&q=filemod_count%3A%5B500%20TO%20%2A%5D%20-alliance_score_deloitteexceptions%3A%5B1%20TO%20%2A%5D"
           }
         ]
       }, 
       "score": 50, 
-      "link": "Local File", 
-      "id": "521c229623dc67f0fcc6032e3b2b0738"
+      "link": "https://github.com/boingomw/Lazerbearsharkpig/blob/master/pretty_feed_links/DeloitteHunting.tsv", 
+      "id": "b82d158706ed936e18841f3f3f6892dd"
     }, 
     {
       "title": "IP traffic on port 3389", 
-      "timestamp": 1471016159, 
+      "timestamp": 1471019374, 
       "iocs": {
         "query": [
           {
             "index_type": "events", 
-            "search_query": "cb.urlver=1&q=ipport%3A3389"
+            "search_query": "cb.urlver=1&q=ipport%3A3389%20-alliance_score_deloitteexceptions%3A%5B1%20TO%20%2A%5D"
           }
         ]
       }, 
       "score": 50, 
-      "link": "Local File", 
-      "id": "96bd7aad2a9c87de8bf1a2d381394d90"
+      "link": "https://github.com/boingomw/Lazerbearsharkpig/blob/master/pretty_feed_links/DeloitteHunting.tsv", 
+      "id": "dd82481ab4f3604c6eb541b9b9050d55"
     }, 
     {
       "title": "Web ports used by non-browsers", 
-      "timestamp": 1471016159, 
+      "timestamp": 1471019374, 
       "iocs": {
         "query": [
           {
             "index_type": "events", 
-            "search_query": "cb.urlver=1&q=ipport%3A80%20AND%20ipport%3A443%20AND%20ipport%3A8080%20AND%20-process_name%3Achrome.exe%20AND%20-process_name%3Aiexplore.exe"
+            "search_query": "cb.urlver=1&q=ipport%3A80%20AND%20ipport%3A443%20AND%20ipport%3A8080%20AND%20-process_name%3Achrome.exe%20AND%20-process_name%3Aiexplore.exe%20-alliance_score_deloitteexceptions%3A%5B1%20TO%20%2A%5D"
           }
         ]
       }, 
       "score": 50, 
-      "link": "Local File", 
-      "id": "75ce95712b28a504a330dec56516a0b0"
+      "link": "https://github.com/boingomw/Lazerbearsharkpig/blob/master/pretty_feed_links/DeloitteHunting.tsv", 
+      "id": "28ba790a0c690ba3b4f0c72099d6f1b5"
     }, 
     {
       "title": "Internet Explorer compromise", 
-      "timestamp": 1471016159, 
+      "timestamp": 1471019374, 
       "iocs": {
         "query": [
           {
             "index_type": "events", 
-            "search_query": "cb.urlver=1&q=modload%3Avgx.dll%20AND%20process_name%3Aiexplore.exe%20AND%20modload%3A%2A.ocx%20AND%20childproc_name%3A%2A.dll"
+            "search_query": "cb.urlver=1&q=modload%3Avgx.dll%20AND%20process_name%3Aiexplore.exe%20AND%20modload%3A%2A.ocx%20AND%20childproc_name%3A%2A.dll%20-alliance_score_deloitteexceptions%3A%5B1%20TO%20%2A%5D"
           }
         ]
       }, 
       "score": 50, 
-      "link": "Local File", 
-      "id": "685ca7ec2ce9aa6349873d2b3983b969"
+      "link": "https://github.com/boingomw/Lazerbearsharkpig/blob/master/pretty_feed_links/DeloitteHunting.tsv", 
+      "id": "6c83611515deef2937c73c1f5bb932bb"
     }, 
     {
       "title": "Not signed binaries initiating connections to public IPs", 
-      "timestamp": 1471016159, 
+      "timestamp": 1471019374, 
       "iocs": {
         "query": [
           {
             "index_type": "events", 
-            "search_query": "cb.urlver=1&q=netconn_count%3A%5B1%20TO%20%2A%5D%20AND%20-digsig_result%3Asigned%20AND%20%28ipaddr%3A%5B0.0.0.0%20to%209.255.255.255%5D%20OR%20ipaddr%3A%5B11.0.0.0%20to%20100.63.255.255%5D%20OR%20ipaddr%3A%5B100.128.0.0%20to%20127.0.0.0%5D%20OR%20ipaddr%3A%5B127.0.0.2%20to%20127.255.255.255%5D%20OR%20ipaddr%3A%5B128.0.0.0%20to%20172.15.255.255%5D%20OR%20ipaddr%3A%5B172.32.0.0%20to%20191.255.255.255%5D%20OR%20ipaddr%3A%5B193.0.0.0%20to%20192.167.255.255%5D%20OR%20ipaddr%3A%5B192.169.0.0%20to%20198.17.255.255%5D%20OR%20ipaddr%3A%5B198.20.0.0%20to%20255.255.255.255%5D%29%20%20AND%20os_type%3Awindows"
+            "search_query": "cb.urlver=1&q=netconn_count%3A%5B1%20TO%20%2A%5D%20AND%20-digsig_result%3Asigned%20AND%20%28ipaddr%3A%5B0.0.0.0%20to%209.255.255.255%5D%20OR%20ipaddr%3A%5B11.0.0.0%20to%20100.63.255.255%5D%20OR%20ipaddr%3A%5B100.128.0.0%20to%20127.0.0.0%5D%20OR%20ipaddr%3A%5B127.0.0.2%20to%20127.255.255.255%5D%20OR%20ipaddr%3A%5B128.0.0.0%20to%20172.15.255.255%5D%20OR%20ipaddr%3A%5B172.32.0.0%20to%20191.255.255.255%5D%20OR%20ipaddr%3A%5B193.0.0.0%20to%20192.167.255.255%5D%20OR%20ipaddr%3A%5B192.169.0.0%20to%20198.17.255.255%5D%20OR%20ipaddr%3A%5B198.20.0.0%20to%20255.255.255.255%5D%29%20%20AND%20os_type%3Awindows%20-alliance_score_deloitteexceptions%3A%5B1%20TO%20%2A%5D"
           }
         ]
       }, 
       "score": 50, 
-      "link": "Local File", 
-      "id": "3156e8c01b9ccff58f7be58f26c2ba96"
+      "link": "https://github.com/boingomw/Lazerbearsharkpig/blob/master/pretty_feed_links/DeloitteHunting.tsv", 
+      "id": "0e7f05395684464cf5f7d3a60c156e9b"
     }, 
     {
       "title": "Unsigned binaries initiating connections to public IPs", 
-      "timestamp": 1471016159, 
+      "timestamp": 1471019374, 
       "iocs": {
         "query": [
           {
             "index_type": "events", 
-            "search_query": "cb.urlver=1&q=netconn_count%3A%5B1%20TO%20%2A%5D%20AND%20digsig_result%3AUnsigned%20AND%20%28ipaddr%3A%5B0.0.0.0%20to%209.255.255.255%5D%20OR%20ipaddr%3A%5B11.0.0.0%20to%20100.63.255.255%5D%20OR%20ipaddr%3A%5B100.128.0.0%20to%20127.0.0.0%5D%20OR%20ipaddr%3A%5B127.0.0.2%20to%20127.255.255.255%5D%20OR%20ipaddr%3A%5B128.0.0.0%20to%20172.15.255.255%5D%20OR%20ipaddr%3A%5B172.32.0.0%20to%20191.255.255.255%5D%20OR%20ipaddr%3A%5B193.0.0.0%20to%20192.167.255.255%5D%20OR%20ipaddr%3A%5B192.169.0.0%20to%20198.17.255.255%5D%20OR%20ipaddr%3A%5B198.20.0.0%20to%20255.255.255.255%5D%20OR%20ipaddr%3A%5B64.53.32.192%20to%2064.53.32.192%5D%29%20%20AND%20os_type%3Awindows"
+            "search_query": "cb.urlver=1&q=netconn_count%3A%5B1%20TO%20%2A%5D%20AND%20digsig_result%3AUnsigned%20AND%20%28ipaddr%3A%5B0.0.0.0%20to%209.255.255.255%5D%20OR%20ipaddr%3A%5B11.0.0.0%20to%20100.63.255.255%5D%20OR%20ipaddr%3A%5B100.128.0.0%20to%20127.0.0.0%5D%20OR%20ipaddr%3A%5B127.0.0.2%20to%20127.255.255.255%5D%20OR%20ipaddr%3A%5B128.0.0.0%20to%20172.15.255.255%5D%20OR%20ipaddr%3A%5B172.32.0.0%20to%20191.255.255.255%5D%20OR%20ipaddr%3A%5B193.0.0.0%20to%20192.167.255.255%5D%20OR%20ipaddr%3A%5B192.169.0.0%20to%20198.17.255.255%5D%20OR%20ipaddr%3A%5B198.20.0.0%20to%20255.255.255.255%5D%20OR%20ipaddr%3A%5B64.53.32.192%20to%2064.53.32.192%5D%29%20%20AND%20os_type%3Awindows%20-alliance_score_deloitteexceptions%3A%5B1%20TO%20%2A%5D"
           }
         ]
       }, 
       "score": 50, 
-      "link": "Local File", 
-      "id": "9186d0fedb265dab074acd01d2c6f76d"
+      "link": "https://github.com/boingomw/Lazerbearsharkpig/blob/master/pretty_feed_links/DeloitteHunting.tsv", 
+      "id": "96f19dc862f4cd54278910f42e9c21e0"
     }, 
     {
       "title": "Process spawned via Acrobat", 
-      "timestamp": 1471016159, 
+      "timestamp": 1471019374, 
       "iocs": {
         "query": [
           {
             "index_type": "events", 
-            "search_query": "cb.urlver=1&q=parent_name%3Aacrord32.exe"
+            "search_query": "cb.urlver=1&q=parent_name%3Aacrord32.exe%20-alliance_score_deloitteexceptions%3A%5B1%20TO%20%2A%5D"
           }
         ]
       }, 
       "score": 50, 
-      "link": "Local File", 
-      "id": "ad88e75d1261ed6f09ce55857653fc3a"
+      "link": "https://github.com/boingomw/Lazerbearsharkpig/blob/master/pretty_feed_links/DeloitteHunting.tsv", 
+      "id": "875ecaf17ccd6d61c8b9b8087ab877e8"
     }, 
     {
       "title": "Process spawned via browser", 
-      "timestamp": 1471016159, 
+      "timestamp": 1471019374, 
       "iocs": {
         "query": [
           {
             "index_type": "events", 
-            "search_query": "cb.urlver=1&q=parent_name%3Achrome.exe%20OR%20parent_name%3Aiexplore.exe%20OR%20parent_name%3Afirefox.exe"
+            "search_query": "cb.urlver=1&q=parent_name%3Achrome.exe%20OR%20parent_name%3Aiexplore.exe%20OR%20parent_name%3Afirefox.exe%20-alliance_score_deloitteexceptions%3A%5B1%20TO%20%2A%5D"
           }
         ]
       }, 
       "score": 50, 
-      "link": "Local File", 
-      "id": "3302519ec648c371edca955f9175ca7a"
+      "link": "https://github.com/boingomw/Lazerbearsharkpig/blob/master/pretty_feed_links/DeloitteHunting.tsv", 
+      "id": "4ef47bf0c094712d4b28c24c8070ba9e"
     }, 
     {
       "title": "Process spawned via Java", 
-      "timestamp": 1471016159, 
+      "timestamp": 1471019374, 
       "iocs": {
         "query": [
           {
             "index_type": "events", 
-            "search_query": "cb.urlver=1&q=parent_name%3Ajava.exe"
+            "search_query": "cb.urlver=1&q=parent_name%3Ajava.exe%20-alliance_score_deloitteexceptions%3A%5B1%20TO%20%2A%5D"
           }
         ]
       }, 
       "score": 50, 
-      "link": "Local File", 
-      "id": "f2e872780a0d4f51d8bb7b8592a1a578"
+      "link": "https://github.com/boingomw/Lazerbearsharkpig/blob/master/pretty_feed_links/DeloitteHunting.tsv", 
+      "id": "5b86aeb84d641662ad050b8a37a41240"
     }, 
     {
       "title": "Process spawned via Javaw", 
-      "timestamp": 1471016159, 
+      "timestamp": 1471019374, 
       "iocs": {
         "query": [
           {
             "index_type": "events", 
-            "search_query": "cb.urlver=1&q=parent_name%3Ajavaw.exe"
+            "search_query": "cb.urlver=1&q=parent_name%3Ajavaw.exe%20-alliance_score_deloitteexceptions%3A%5B1%20TO%20%2A%5D"
           }
         ]
       }, 
       "score": 50, 
-      "link": "Local File", 
-      "id": "07b4077bae5c28703bf57908f4236228"
+      "link": "https://github.com/boingomw/Lazerbearsharkpig/blob/master/pretty_feed_links/DeloitteHunting.tsv", 
+      "id": "fe793a92c80a3ae5a98c5eead8181757"
     }, 
     {
       "title": "Process spawned via Outlook", 
-      "timestamp": 1471016159, 
+      "timestamp": 1471019374, 
       "iocs": {
         "query": [
           {
             "index_type": "events", 
-            "search_query": "cb.urlver=1&q=parent_name%3Aoutlook.exe"
+            "search_query": "cb.urlver=1&q=parent_name%3Aoutlook.exe%20-alliance_score_deloitteexceptions%3A%5B1%20TO%20%2A%5D"
           }
         ]
       }, 
       "score": 50, 
-      "link": "Local File", 
-      "id": "5be7aa02e35a8454fa3efeaeed89efc8"
+      "link": "https://github.com/boingomw/Lazerbearsharkpig/blob/master/pretty_feed_links/DeloitteHunting.tsv", 
+      "id": "94ee3f6d855caa9bf4e1d42db3dca076"
     }, 
     {
       "title": "Process spawned via Services.exe with >1 network connection", 
-      "timestamp": 1471016159, 
+      "timestamp": 1471019374, 
       "iocs": {
         "query": [
           {
             "index_type": "events", 
-            "search_query": "cb.urlver=1&q=parent_name%3Aservices.exe%20AND%20netconn_count%3A%5B1%20TO%20%2A%5D"
+            "search_query": "cb.urlver=1&q=parent_name%3Aservices.exe%20AND%20netconn_count%3A%5B1%20TO%20%2A%5D%20-alliance_score_deloitteexceptions%3A%5B1%20TO%20%2A%5D"
           }
         ]
       }, 
       "score": 50, 
-      "link": "Local File", 
-      "id": "889158e12e553199754bba756048c9b7"
+      "link": "https://github.com/boingomw/Lazerbearsharkpig/blob/master/pretty_feed_links/DeloitteHunting.tsv", 
+      "id": "2baa09d5d8d1638facb6cc7c055b9ea9"
     }, 
     {
       "title": "Wininit started by something other than smss.exe", 
-      "timestamp": 1471016159, 
+      "timestamp": 1471019374, 
       "iocs": {
         "query": [
           {
             "index_type": "events", 
-            "search_query": "cb.urlver=1&q=-parent_name%3Asmss.exe%20AND%20parent_name%3A%2A%20AND%20process_name%3Awininit.exe"
+            "search_query": "cb.urlver=1&q=-parent_name%3Asmss.exe%20AND%20parent_name%3A%2A%20AND%20process_name%3Awininit.exe%20-alliance_score_deloitteexceptions%3A%5B1%20TO%20%2A%5D"
           }
         ]
       }, 
       "score": 50, 
-      "link": "Local File", 
-      "id": "49c330a638c094b8b83f52896a9028bb"
+      "link": "https://github.com/boingomw/Lazerbearsharkpig/blob/master/pretty_feed_links/DeloitteHunting.tsv", 
+      "id": "6a3beca64b35a100058c542aa7216ea4"
     }, 
     {
       "title": "Unsigned binaries started by taskeng.exe that have network communications with public IP space", 
-      "timestamp": 1471016159, 
+      "timestamp": 1471019374, 
       "iocs": {
         "query": [
           {
             "index_type": "events", 
-            "search_query": "cb.urlver=1&q=parent_name%3Ataskeng.exe%20AND%20netconn_count%3A%5B1%20TO%20%2A%5D%20AND%20-digsig_result%3Asigned%20AND%20%28ipaddr%3A%5B0.0.0.0%20to%209.255.255.255%5D%20OR%20ipaddr%3A%5B11.0.0.0%20to%20100.63.255.255%5D%20OR%20ipaddr%3A%5B100.128.0.0%20to%20127.0.0.0%5D%20OR%20ipaddr%3A%5B127.0.0.2%20to%20127.255.255.255%5D%20OR%20ipaddr%3A%5B128.0.0.0%20to%20172.15.255.255%5D%20OR%20ipaddr%3A%5B172.32.0.0%20to%20191.255.255.255%5D%20OR%20ipaddr%3A%5B193.0.0.0%20to%20192.167.255.255%5D%20OR%20ipaddr%3A%5B192.169.0.0%20to%20198.17.255.255%5D%20OR%20ipaddr%3A%5B198.20.0.0%20to%20255.255.255.255%5D%29%20%20AND%20os_type%3Awindows%20-alliance_score_deloitteexceptions%3A%5B1%20TO%20%2A%5D%20"
+            "search_query": "cb.urlver=1&q=parent_name%3Ataskeng.exe%20AND%20netconn_count%3A%5B1%20TO%20%2A%5D%20AND%20-digsig_result%3Asigned%20AND%20%28ipaddr%3A%5B0.0.0.0%20to%209.255.255.255%5D%20OR%20ipaddr%3A%5B11.0.0.0%20to%20100.63.255.255%5D%20OR%20ipaddr%3A%5B100.128.0.0%20to%20127.0.0.0%5D%20OR%20ipaddr%3A%5B127.0.0.2%20to%20127.255.255.255%5D%20OR%20ipaddr%3A%5B128.0.0.0%20to%20172.15.255.255%5D%20OR%20ipaddr%3A%5B172.32.0.0%20to%20191.255.255.255%5D%20OR%20ipaddr%3A%5B193.0.0.0%20to%20192.167.255.255%5D%20OR%20ipaddr%3A%5B192.169.0.0%20to%20198.17.255.255%5D%20OR%20ipaddr%3A%5B198.20.0.0%20to%20255.255.255.255%5D%29%20%20AND%20os_type%3Awindows%20-alliance_score_deloitteexceptions%3A%5B1%20TO%20%2A%5D%20%20-alliance_score_deloitteexceptions%3A%5B1%20TO%20%2A%5D"
           }
         ]
       }, 
       "score": 50, 
-      "link": "Local File", 
-      "id": "f3d99e70d182314714afcbd5469760c3"
+      "link": "https://github.com/boingomw/Lazerbearsharkpig/blob/master/pretty_feed_links/DeloitteHunting.tsv", 
+      "id": "cdad6c1db9bc872bc6e0caa4510abb7e"
     }, 
     {
       "title": "Taskeng.exe starting at.exe or schtasks.exe", 
-      "timestamp": 1471016159, 
+      "timestamp": 1471019374, 
       "iocs": {
         "query": [
           {
             "index_type": "events", 
-            "search_query": "cb.urlver=1&q=parent_name%3Ataskeng.exe%20OR%20process_name%3Aat.exe%20OR%20process_name%3Aschtasks.exe"
+            "search_query": "cb.urlver=1&q=parent_name%3Ataskeng.exe%20OR%20process_name%3Aat.exe%20OR%20process_name%3Aschtasks.exe%20-alliance_score_deloitteexceptions%3A%5B1%20TO%20%2A%5D"
           }
         ]
       }, 
       "score": 50, 
-      "link": "Local File", 
-      "id": "c6223e492cbaedd4e030ceaa4dbdffdf"
+      "link": "https://github.com/boingomw/Lazerbearsharkpig/blob/master/pretty_feed_links/DeloitteHunting.tsv", 
+      "id": "2d849ad2a02605ee54257d3a988c9254"
     }, 
     {
       "title": "Process spawned via Word", 
-      "timestamp": 1471016159, 
+      "timestamp": 1471019374, 
       "iocs": {
         "query": [
           {
             "index_type": "events", 
-            "search_query": "cb.urlver=1&q=parent_name%3Awinword.exe"
+            "search_query": "cb.urlver=1&q=parent_name%3Awinword.exe%20-alliance_score_deloitteexceptions%3A%5B1%20TO%20%2A%5D"
           }
         ]
       }, 
       "score": 50, 
-      "link": "Local File", 
-      "id": "b54286c24d9c4ae4f8e528557f0ea288"
+      "link": "https://github.com/boingomw/Lazerbearsharkpig/blob/master/pretty_feed_links/DeloitteHunting.tsv", 
+      "id": "701c1fd742022d86d4356b1313ce2cda"
     }, 
     {
       "title": "Process spawned via Word, Excel, PowerPoint, or Acrobat Reader", 
-      "timestamp": 1471016159, 
+      "timestamp": 1471019374, 
       "iocs": {
         "query": [
           {
             "index_type": "events", 
-            "search_query": "cb.urlver=1&q=parent_name%3Awinword.exe%20OR%20parent_name%3Aexcel.exe%20OR%20parent_name%3Apowerpnt.exe%20OR%20parent_name%3AAcroRd32.exe"
+            "search_query": "cb.urlver=1&q=parent_name%3Awinword.exe%20OR%20parent_name%3Aexcel.exe%20OR%20parent_name%3Apowerpnt.exe%20OR%20parent_name%3AAcroRd32.exe%20-alliance_score_deloitteexceptions%3A%5B1%20TO%20%2A%5D"
           }
         ]
       }, 
       "score": 50, 
-      "link": "Local File", 
-      "id": "6a52f20bc999b07fdd821aede182c5b3"
+      "link": "https://github.com/boingomw/Lazerbearsharkpig/blob/master/pretty_feed_links/DeloitteHunting.tsv", 
+      "id": "9cc8c551812e91a0aa10420a9173002f"
     }, 
     {
       "title": "Unsigned binaries executed from drives other than C or D", 
-      "timestamp": 1471016159, 
+      "timestamp": 1471019374, 
       "iocs": {
         "query": [
           {
             "index_type": "events", 
-            "search_query": "cb.urlver=1&q=-path%3AC%2A%20and%20-path%3AD%2A%20AND%20-digsig_result%3A%27Signed%27"
+            "search_query": "cb.urlver=1&q=-path%3AC%2A%20and%20-path%3AD%2A%20AND%20-digsig_result%3A%27Signed%27%20-alliance_score_deloitteexceptions%3A%5B1%20TO%20%2A%5D"
           }
         ]
       }, 
       "score": 50, 
-      "link": "Local File", 
-      "id": "90de830e27fd853809dc2fba8c763bb1"
+      "link": "https://github.com/boingomw/Lazerbearsharkpig/blob/master/pretty_feed_links/DeloitteHunting.tsv", 
+      "id": "b9e03776303b7b4f90b4bca9662955db"
     }, 
     {
       "title": "Execution from RECYCLER", 
-      "timestamp": 1471016159, 
+      "timestamp": 1471019374, 
       "iocs": {
         "query": [
           {
             "index_type": "events", 
-            "search_query": "cb.urlver=1&q=path%3ARECYCLER%2F%2A.exe"
+            "search_query": "cb.urlver=1&q=path%3ARECYCLER%2F%2A.exe%20-alliance_score_deloitteexceptions%3A%5B1%20TO%20%2A%5D"
           }
         ]
       }, 
       "score": 50, 
-      "link": "Local File", 
-      "id": "2ecdeae8fe929e41daa98cc6af4e55ce"
+      "link": "https://github.com/boingomw/Lazerbearsharkpig/blob/master/pretty_feed_links/DeloitteHunting.tsv", 
+      "id": "580e84e1eb0cecda4bd076ff35b0abcd"
     }, 
     {
       "title": "Execution from System Volume Information", 
-      "timestamp": 1471016159, 
+      "timestamp": 1471019374, 
       "iocs": {
         "query": [
           {
             "index_type": "events", 
-            "search_query": "cb.urlver=1&q=path%3ASystem%5C%20Volume%5C%20Information%2A"
+            "search_query": "cb.urlver=1&q=path%3ASystem%5C%20Volume%5C%20Information%2A%20-alliance_score_deloitteexceptions%3A%5B1%20TO%20%2A%5D"
           }
         ]
       }, 
       "score": 50, 
-      "link": "Local File", 
-      "id": "60093545014f233cba1dc006800903e8"
+      "link": "https://github.com/boingomw/Lazerbearsharkpig/blob/master/pretty_feed_links/DeloitteHunting.tsv", 
+      "id": "e94a194505eaf7396539065428b2830b"
     }, 
     {
       "title": "Execution from Windows/IME", 
-      "timestamp": 1471016159, 
+      "timestamp": 1471019374, 
       "iocs": {
         "query": [
           {
             "index_type": "events", 
-            "search_query": "cb.urlver=1&q=path%3AWindows%2FIME%2F%2A.exe"
+            "search_query": "cb.urlver=1&q=path%3AWindows%2FIME%2F%2A.exe%20-alliance_score_deloitteexceptions%3A%5B1%20TO%20%2A%5D"
           }
         ]
       }, 
       "score": 50, 
-      "link": "Local File", 
-      "id": "c53ee73bccca7ae096226f2681158cd7"
+      "link": "https://github.com/boingomw/Lazerbearsharkpig/blob/master/pretty_feed_links/DeloitteHunting.tsv", 
+      "id": "8fc72dcfaaba86fe8b3d247193004c6e"
     }, 
     {
       "title": "Enumeration of user sessions", 
-      "timestamp": 1471016159, 
+      "timestamp": 1471019374, 
       "iocs": {
         "query": [
           {
             "index_type": "events", 
-            "search_query": "cb.urlver=1&q=path%3Awindows%2Fsystem32%2Fquser.exe"
+            "search_query": "cb.urlver=1&q=path%3Awindows%2Fsystem32%2Fquser.exe%20-alliance_score_deloitteexceptions%3A%5B1%20TO%20%2A%5D"
           }
         ]
       }, 
       "score": 50, 
-      "link": "Local File", 
-      "id": "50d6230d954a9f74b479e654e1a10c5c"
+      "link": "https://github.com/boingomw/Lazerbearsharkpig/blob/master/pretty_feed_links/DeloitteHunting.tsv", 
+      "id": "95783c06b60f121d6030d6e60b33e2b1"
     }, 
     {
       "title": "Suspicious filename (extension hiding)", 
-      "timestamp": 1471016159, 
+      "timestamp": 1471019374, 
       "iocs": {
         "query": [
           {
             "index_type": "events", 
-            "search_query": "cb.urlver=1&q=process_name%3A%2A.txt.exe%20OR%20process_name%3A%2A.pdf.exe%20OR%20process_name%3A%2A.rtf.exe%20OR%20process_name%3A%2A.jpg.exe%20OR%20process_name%3A%2A.xml.exe%20OR%20process_name%3A%2A.gif.exe%20OR%20process_name%3A%2A.htm.exe%20OR%20process_name%3A%2A.html.exe%20OR%20process_name%3A%2A.zip.exe"
+            "search_query": "cb.urlver=1&q=process_name%3A%2A.txt.exe%20OR%20process_name%3A%2A.pdf.exe%20OR%20process_name%3A%2A.rtf.exe%20OR%20process_name%3A%2A.jpg.exe%20OR%20process_name%3A%2A.xml.exe%20OR%20process_name%3A%2A.gif.exe%20OR%20process_name%3A%2A.htm.exe%20OR%20process_name%3A%2A.html.exe%20OR%20process_name%3A%2A.zip.exe%20-alliance_score_deloitteexceptions%3A%5B1%20TO%20%2A%5D"
           }
         ]
       }, 
       "score": 50, 
-      "link": "Local File", 
-      "id": "c6abb1e85344611a5e14b5a6aaa63c4c"
+      "link": "https://github.com/boingomw/Lazerbearsharkpig/blob/master/pretty_feed_links/DeloitteHunting.tsv", 
+      "id": "c33f0f94a71e81a747d73da595f94c3c"
     }, 
     {
       "title": "Scheduled task execution", 
-      "timestamp": 1471016159, 
+      "timestamp": 1471019374, 
       "iocs": {
         "query": [
           {
             "index_type": "events", 
-            "search_query": "cb.urlver=1&q=process_name%3Aat.exe%20OR%20process_name%3Aschtask.exe"
+            "search_query": "cb.urlver=1&q=process_name%3Aat.exe%20OR%20process_name%3Aschtask.exe%20-alliance_score_deloitteexceptions%3A%5B1%20TO%20%2A%5D"
           }
         ]
       }, 
       "score": 50, 
-      "link": "Local File", 
-      "id": "dd40dd0dd7458b5a86951d1b0345df10"
+      "link": "https://github.com/boingomw/Lazerbearsharkpig/blob/master/pretty_feed_links/DeloitteHunting.tsv", 
+      "id": "ddfab7d8dd863b06d67954f910ad65c4"
     }, 
     {
       "title": "CMD shell spawned by Excel", 
-      "timestamp": 1471016159, 
+      "timestamp": 1471019374, 
       "iocs": {
         "query": [
           {
             "index_type": "events", 
-            "search_query": "cb.urlver=1&q=process_name%3Acmd.exe%20parent_name%3Aexcel.exe"
+            "search_query": "cb.urlver=1&q=process_name%3Acmd.exe%20parent_name%3Aexcel.exe%20-alliance_score_deloitteexceptions%3A%5B1%20TO%20%2A%5D"
           }
         ]
       }, 
       "score": 50, 
-      "link": "Local File", 
-      "id": "afc2ce6388692c4718835a17b4c3424f"
+      "link": "https://github.com/boingomw/Lazerbearsharkpig/blob/master/pretty_feed_links/DeloitteHunting.tsv", 
+      "id": "66e949edfd5997b39020c934421b54d6"
     }, 
     {
       "title": "Typical troubleshooting / enumeration tools", 
-      "timestamp": 1471016159, 
+      "timestamp": 1471019374, 
       "iocs": {
         "query": [
           {
             "index_type": "events", 
-            "search_query": "cb.urlver=1&q=process_name%3Aenum.exe%20OR%20process_name%3Asc.exe%20OR%20process_name%3Anetsh.exe%20OR%20process_name%3Aarp.exe%20OR%20process_name%3Anmap.exe%20OR%20process_name%3Atasklist.exe%20OR%20process_name%3Atracert.exe%20OR%20process_name%3Aping.exe%20OR%20process_name%3Anetstat.exe"
+            "search_query": "cb.urlver=1&q=process_name%3Aenum.exe%20OR%20process_name%3Asc.exe%20OR%20process_name%3Anetsh.exe%20OR%20process_name%3Aarp.exe%20OR%20process_name%3Anmap.exe%20OR%20process_name%3Atasklist.exe%20OR%20process_name%3Atracert.exe%20OR%20process_name%3Aping.exe%20OR%20process_name%3Anetstat.exe%20-alliance_score_deloitteexceptions%3A%5B1%20TO%20%2A%5D"
           }
         ]
       }, 
       "score": 50, 
-      "link": "Local File", 
-      "id": "5f43d1bf0ce940bcfbed5ab0b07e5bdb"
+      "link": "https://github.com/boingomw/Lazerbearsharkpig/blob/master/pretty_feed_links/DeloitteHunting.tsv", 
+      "id": "b1863e1145c7bfde555c60aaf2102a91"
     }, 
     {
       "title": "Regedit spawned by process other than explorer", 
-      "timestamp": 1471016159, 
+      "timestamp": 1471019374, 
       "iocs": {
         "query": [
           {
             "index_type": "events", 
-            "search_query": "cb.urlver=1&q=%28-process_name%3Aexplorer.exe%20AND%20%28childproc_name%3Aregedit.exe%20OR%20childproc_name%3Aregedt32.exe%29%29"
+            "search_query": "cb.urlver=1&q=%28-process_name%3Aexplorer.exe%20AND%20%28childproc_name%3Aregedit.exe%20OR%20childproc_name%3Aregedt32.exe%29%29%20-alliance_score_deloitteexceptions%3A%5B1%20TO%20%2A%5D"
           }
         ]
       }, 
       "score": 50, 
-      "link": "Local File", 
-      "id": "2b3da5ec781e28b90ea87b796be6388a"
+      "link": "https://github.com/boingomw/Lazerbearsharkpig/blob/master/pretty_feed_links/DeloitteHunting.tsv", 
+      "id": "111061e4ab7143e3916a3f775ded3778"
     }, 
     {
       "title": "FTP usage", 
-      "timestamp": 1471016159, 
+      "timestamp": 1471019374, 
       "iocs": {
         "query": [
           {
             "index_type": "events", 
-            "search_query": "cb.urlver=1&q=process_name%3Aftp.exe"
+            "search_query": "cb.urlver=1&q=process_name%3Aftp.exe%20-alliance_score_deloitteexceptions%3A%5B1%20TO%20%2A%5D"
           }
         ]
       }, 
       "score": 50, 
-      "link": "Local File", 
-      "id": "514f7f97ac41d1e5ccaeb40b4f7ad690"
+      "link": "https://github.com/boingomw/Lazerbearsharkpig/blob/master/pretty_feed_links/DeloitteHunting.tsv", 
+      "id": "95904e141b6f4cd729bfe9b83e524e73"
     }, 
     {
       "title": "Internet Explorer run by SYSTEM", 
-      "timestamp": 1471016159, 
+      "timestamp": 1471019374, 
       "iocs": {
         "query": [
           {
             "index_type": "events", 
-            "search_query": "cb.urlver=1&q=process_name%3Aiexplore.exe%20username%3Asystem"
+            "search_query": "cb.urlver=1&q=process_name%3Aiexplore.exe%20username%3Asystem%20-alliance_score_deloitteexceptions%3A%5B1%20TO%20%2A%5D"
           }
         ]
       }, 
       "score": 50, 
-      "link": "Local File", 
-      "id": "d5012404d0f703e165bf037b01b94ef6"
+      "link": "https://github.com/boingomw/Lazerbearsharkpig/blob/master/pretty_feed_links/DeloitteHunting.tsv", 
+      "id": "8dcd9f7211e9df38702791282b4bd3ca"
     }, 
     {
       "title": "Suspicious filename (misspelled system files)", 
-      "timestamp": 1471016159, 
+      "timestamp": 1471019374, 
       "iocs": {
         "query": [
           {
             "index_type": "events", 
-            "search_query": "cb.urlver=1&q=process_name%3Aisass.exe%20OR%20process_name%3Asvch0st.exe%20OR%20process_name%3Asvchost.dll%20OR%20process_name%3Alexplore.exe%20OR%20process_name%3Alexplorer.exe%20OR%20process_name%3Asvchosts.exe%20OR%20process_name%3Acsrsr.exe"
+            "search_query": "cb.urlver=1&q=process_name%3Aisass.exe%20OR%20process_name%3Asvch0st.exe%20OR%20process_name%3Asvchost.dll%20OR%20process_name%3Alexplore.exe%20OR%20process_name%3Alexplorer.exe%20OR%20process_name%3Asvchosts.exe%20OR%20process_name%3Acsrsr.exe%20-alliance_score_deloitteexceptions%3A%5B1%20TO%20%2A%5D"
           }
         ]
       }, 
       "score": 50, 
-      "link": "Local File", 
-      "id": "53a7a57a5816027a001347bc73035515"
+      "link": "https://github.com/boingomw/Lazerbearsharkpig/blob/master/pretty_feed_links/DeloitteHunting.tsv", 
+      "id": "0d6cc0eaf3c828b2dcb2be284cd98408"
     }, 
     {
       "title": "RDP sessions to external IP space", 
-      "timestamp": 1471016159, 
+      "timestamp": 1471019374, 
       "iocs": {
         "query": [
           {
             "index_type": "events", 
-            "search_query": "cb.urlver=1&q=process_name%3Amstsc.exe%20AND%20%28ipaddr%3A%5B0.0.0.0%20to%209.255.255.255%5D%20OR%20ipaddr%3A%5B11.0.0.0%20to%20100.63.255.255%5D%20OR%20ipaddr%3A%5B100.128.0.0%20to%20127.0.0.0%5D%20OR%20ipaddr%3A%5B127.0.0.2%20to%20127.255.255.255%5D%20OR%20ipaddr%3A%5B128.0.0.0%20to%20172.15.255.255%5D%20OR%20ipaddr%3A%5B172.32.0.0%20to%20191.255.255.255%5D%20OR%20ipaddr%3A%5B193.0.0.0%20to%20192.167.255.255%5D%20OR%20ipaddr%3A%5B192.169.0.0%20to%20198.17.255.255%5D%20OR%20ipaddr%3A%5B198.20.0.0%20to%20255.255.255.255%5D%29%20AND%20-ipaddr%3A%5B64.53.32.0%20to%2064.53.32.254%5D%29"
+            "search_query": "cb.urlver=1&q=process_name%3Amstsc.exe%20AND%20%28ipaddr%3A%5B0.0.0.0%20to%209.255.255.255%5D%20OR%20ipaddr%3A%5B11.0.0.0%20to%20100.63.255.255%5D%20OR%20ipaddr%3A%5B100.128.0.0%20to%20127.0.0.0%5D%20OR%20ipaddr%3A%5B127.0.0.2%20to%20127.255.255.255%5D%20OR%20ipaddr%3A%5B128.0.0.0%20to%20172.15.255.255%5D%20OR%20ipaddr%3A%5B172.32.0.0%20to%20191.255.255.255%5D%20OR%20ipaddr%3A%5B193.0.0.0%20to%20192.167.255.255%5D%20OR%20ipaddr%3A%5B192.169.0.0%20to%20198.17.255.255%5D%20OR%20ipaddr%3A%5B198.20.0.0%20to%20255.255.255.255%5D%29%20AND%20-ipaddr%3A%5B64.53.32.0%20to%2064.53.32.254%5D%29%20-alliance_score_deloitteexceptions%3A%5B1%20TO%20%2A%5D"
           }
         ]
       }, 
       "score": 50, 
-      "link": "Local File", 
-      "id": "de3aece70e013daf17e90b8559cba29c"
+      "link": "https://github.com/boingomw/Lazerbearsharkpig/blob/master/pretty_feed_links/DeloitteHunting.tsv", 
+      "id": "6a8d06e35195c458abdbd3a671a31910"
     }, 
     {
       "title": "Net.exe started by process other than gpshell.exe", 
-      "timestamp": 1471016159, 
+      "timestamp": 1471019374, 
       "iocs": {
         "query": [
           {
             "index_type": "events", 
-            "search_query": "cb.urlver=1&q=process_name%3Anet.exe%20-parent_name%3Agpshell.exe"
+            "search_query": "cb.urlver=1&q=process_name%3Anet.exe%20-parent_name%3Agpshell.exe%20-alliance_score_deloitteexceptions%3A%5B1%20TO%20%2A%5D"
           }
         ]
       }, 
       "score": 50, 
-      "link": "Local File", 
-      "id": "cff2067ce5d8b32880db116023c5f555"
+      "link": "https://github.com/boingomw/Lazerbearsharkpig/blob/master/pretty_feed_links/DeloitteHunting.tsv", 
+      "id": "c47ed43e9d77191afad3a1016481091e"
     }, 
     {
       "title": "Notepad spawning child process", 
-      "timestamp": 1471016159, 
+      "timestamp": 1471019374, 
       "iocs": {
         "query": [
           {
             "index_type": "events", 
-            "search_query": "cb.urlver=1&q=process_name%3Anotepad.exe%20AND%20childproc_name%3A%2A.exe"
+            "search_query": "cb.urlver=1&q=process_name%3Anotepad.exe%20AND%20childproc_name%3A%2A.exe%20-alliance_score_deloitteexceptions%3A%5B1%20TO%20%2A%5D"
           }
         ]
       }, 
       "score": 50, 
-      "link": "Local File", 
-      "id": "44f6d7c03247d69558edd83060e27590"
+      "link": "https://github.com/boingomw/Lazerbearsharkpig/blob/master/pretty_feed_links/DeloitteHunting.tsv", 
+      "id": "bcc2979729c23cdcff6e5e9276b97020"
     }, 
     {
       "title": "Powershell spawning dllhost.exe", 
-      "timestamp": 1471016159, 
+      "timestamp": 1471019374, 
       "iocs": {
         "query": [
           {
             "index_type": "events", 
-            "search_query": "cb.urlver=1&q=process_name%3Apowershell.exe%20AND%20childproc_name%3Adllhost.exe"
+            "search_query": "cb.urlver=1&q=process_name%3Apowershell.exe%20AND%20childproc_name%3Adllhost.exe%20-alliance_score_deloitteexceptions%3A%5B1%20TO%20%2A%5D"
           }
         ]
       }, 
       "score": 50, 
-      "link": "Local File", 
-      "id": "e287422df1efdec3c1429ecb129bc438"
+      "link": "https://github.com/boingomw/Lazerbearsharkpig/blob/master/pretty_feed_links/DeloitteHunting.tsv", 
+      "id": "c6e8c9554fdfe03edbd2fd8e3929565e"
     }, 
     {
       "title": "Powershell Bypass", 
-      "timestamp": 1471016159, 
+      "timestamp": 1471019374, 
       "iocs": {
         "query": [
           {
             "index_type": "events", 
-            "search_query": "cb.urlver=1&q=process_name%3Apowershell.exe%20and%20cmdline%3Abypass"
+            "search_query": "cb.urlver=1&q=process_name%3Apowershell.exe%20and%20cmdline%3Abypass%20-alliance_score_deloitteexceptions%3A%5B1%20TO%20%2A%5D"
           }
         ]
       }, 
       "score": 50, 
-      "link": "Local File", 
-      "id": "efd36e91645b1ded6f2b6ecf95eef14c"
+      "link": "https://github.com/boingomw/Lazerbearsharkpig/blob/master/pretty_feed_links/DeloitteHunting.tsv", 
+      "id": "cd290602e878e9dea927454b34601d69"
     }, 
     {
       "title": "Powershell Encoded Command", 
-      "timestamp": 1471016159, 
+      "timestamp": 1471019374, 
       "iocs": {
         "query": [
           {
             "index_type": "events", 
-            "search_query": "cb.urlver=1&q=process_name%3Apowershell.exe%20and%20cmdline%3A-encodedcommand"
+            "search_query": "cb.urlver=1&q=process_name%3Apowershell.exe%20and%20cmdline%3A-encodedcommand%20-alliance_score_deloitteexceptions%3A%5B1%20TO%20%2A%5D"
           }
         ]
       }, 
       "score": 50, 
-      "link": "Local File", 
-      "id": "223299a17a82a42b7116c42411c80784"
+      "link": "https://github.com/boingomw/Lazerbearsharkpig/blob/master/pretty_feed_links/DeloitteHunting.tsv", 
+      "id": "3445c5f6bab324bc699fa347324aee1a"
     }, 
     {
       "title": "Powershell IEX", 
-      "timestamp": 1471016159, 
+      "timestamp": 1471019374, 
       "iocs": {
         "query": [
           {
             "index_type": "events", 
-            "search_query": "cb.urlver=1&q=process_name%3Apowershell.exe%20AND%20cmdline%3Aiex"
+            "search_query": "cb.urlver=1&q=process_name%3Apowershell.exe%20AND%20cmdline%3Aiex%20-alliance_score_deloitteexceptions%3A%5B1%20TO%20%2A%5D"
           }
         ]
       }, 
       "score": 50, 
-      "link": "Local File", 
-      "id": "78cbb588a7faebd53f2487962f1c817e"
+      "link": "https://github.com/boingomw/Lazerbearsharkpig/blob/master/pretty_feed_links/DeloitteHunting.tsv", 
+      "id": "81690d960e092bae759dc6522138db49"
     }, 
     {
       "title": "Powershell started by rundll32.exe", 
-      "timestamp": 1471016159, 
+      "timestamp": 1471019374, 
       "iocs": {
         "query": [
           {
             "index_type": "events", 
-            "search_query": "cb.urlver=1&q=process_name%3Apowershell.exe%20AND%20parent_name%3Arundll32.exe"
+            "search_query": "cb.urlver=1&q=process_name%3Apowershell.exe%20AND%20parent_name%3Arundll32.exe%20-alliance_score_deloitteexceptions%3A%5B1%20TO%20%2A%5D"
           }
         ]
       }, 
       "score": 50, 
-      "link": "Local File", 
-      "id": "a912962986c0b9746200f18c42bc5a08"
+      "link": "https://github.com/boingomw/Lazerbearsharkpig/blob/master/pretty_feed_links/DeloitteHunting.tsv", 
+      "id": "5e85d82e69fa1adbc0dc48e763ae2394"
     }, 
     {
       "title": "Powershell Download", 
-      "timestamp": 1471016159, 
+      "timestamp": 1471019374, 
       "iocs": {
         "query": [
           {
             "index_type": "events", 
-            "search_query": "cb.urlver=1&q=process_name%3Apowershell.exe%20cmdline%3Anet.webclient%5C%29.downloadstring%5C%28http%3A"
+            "search_query": "cb.urlver=1&q=process_name%3Apowershell.exe%20cmdline%3Anet.webclient%5C%29.downloadstring%5C%28http%3A%20-alliance_score_deloitteexceptions%3A%5B1%20TO%20%2A%5D"
           }
         ]
       }, 
       "score": 50, 
-      "link": "Local File", 
-      "id": "b7ae00b8b88c5bd19e0d4c96b64b8828"
+      "link": "https://github.com/boingomw/Lazerbearsharkpig/blob/master/pretty_feed_links/DeloitteHunting.tsv", 
+      "id": "2c3b832fff9dfa242107a5091de44c70"
     }, 
     {
       "title": "Powershell started by process other than explorer or gpscript", 
-      "timestamp": 1471016159, 
+      "timestamp": 1471019374, 
       "iocs": {
         "query": [
           {
             "index_type": "events", 
-            "search_query": "cb.urlver=1&q=process_name%3Apowershell.exe%20-parent_name%3Aexplorer.exe%20-parent_name%3Agpscript.exe"
+            "search_query": "cb.urlver=1&q=process_name%3Apowershell.exe%20-parent_name%3Aexplorer.exe%20-parent_name%3Agpscript.exe%20-alliance_score_deloitteexceptions%3A%5B1%20TO%20%2A%5D"
           }
         ]
       }, 
       "score": 50, 
-      "link": "Local File", 
-      "id": "3e8ec1f13d656cf5ce6b8b788e38643a"
+      "link": "https://github.com/boingomw/Lazerbearsharkpig/blob/master/pretty_feed_links/DeloitteHunting.tsv", 
+      "id": "7ba881609ba765870b22096dbdfe898b"
     }, 
     {
       "title": "RAR usage", 
-      "timestamp": 1471016159, 
+      "timestamp": 1471019374, 
       "iocs": {
         "query": [
           {
             "index_type": "events", 
-            "search_query": "cb.urlver=1&q=process_name%3Arar.exe"
+            "search_query": "cb.urlver=1&q=process_name%3Arar.exe%20-alliance_score_deloitteexceptions%3A%5B1%20TO%20%2A%5D"
           }
         ]
       }, 
       "score": 50, 
-      "link": "Local File", 
-      "id": "5b939f423ef55ff9a54127402fb21328"
+      "link": "https://github.com/boingomw/Lazerbearsharkpig/blob/master/pretty_feed_links/DeloitteHunting.tsv", 
+      "id": "08ff64d5aa069bbbc837fbbb8700daad"
     }, 
     {
       "title": "Robocopy usage", 
-      "timestamp": 1471016159, 
+      "timestamp": 1471019374, 
       "iocs": {
         "query": [
           {
             "index_type": "events", 
-            "search_query": "cb.urlver=1&q=process_name%3Arobocopy.exe"
+            "search_query": "cb.urlver=1&q=process_name%3Arobocopy.exe%20-alliance_score_deloitteexceptions%3A%5B1%20TO%20%2A%5D"
           }
         ]
       }, 
       "score": 50, 
-      "link": "Local File", 
-      "id": "0eec5abf86b5e95ab502bc77bc258a10"
+      "link": "https://github.com/boingomw/Lazerbearsharkpig/blob/master/pretty_feed_links/DeloitteHunting.tsv", 
+      "id": "4e24c5447698b0b286fcc5955c2d16ec"
     }, 
     {
       "title": "Runas usage", 
-      "timestamp": 1471016159, 
+      "timestamp": 1471019374, 
       "iocs": {
         "query": [
           {
             "index_type": "events", 
-            "search_query": "cb.urlver=1&q=process_name%3Arunas.exe%20OR%20cmdline%3Arunas"
+            "search_query": "cb.urlver=1&q=process_name%3Arunas.exe%20OR%20cmdline%3Arunas%20-alliance_score_deloitteexceptions%3A%5B1%20TO%20%2A%5D"
           }
         ]
       }, 
       "score": 50, 
-      "link": "Local File", 
-      "id": "ed94e6930eedb8fcd3ea052f9b4d4a97"
+      "link": "https://github.com/boingomw/Lazerbearsharkpig/blob/master/pretty_feed_links/DeloitteHunting.tsv", 
+      "id": "a9add9bb1a67e99ca7f96de3838fb6d1"
     }, 
     {
       "title": "Rundll32 usage", 
-      "timestamp": 1471016159, 
+      "timestamp": 1471019374, 
       "iocs": {
         "query": [
           {
             "index_type": "events", 
-            "search_query": "cb.urlver=1&q=process_name%3Arundll32.exe"
+            "search_query": "cb.urlver=1&q=process_name%3Arundll32.exe%20-alliance_score_deloitteexceptions%3A%5B1%20TO%20%2A%5D"
           }
         ]
       }, 
       "score": 50, 
-      "link": "Local File", 
-      "id": "aff0cb4d72f5b8d1f6892126a083bcdc"
+      "link": "https://github.com/boingomw/Lazerbearsharkpig/blob/master/pretty_feed_links/DeloitteHunting.tsv", 
+      "id": "e3370a3e783db7798714c456dc50c59a"
     }, 
     {
       "title": "Rundll32 used to run html", 
-      "timestamp": 1471016159, 
+      "timestamp": 1471019374, 
       "iocs": {
         "query": [
           {
             "index_type": "events", 
-            "search_query": "cb.urlver=1&q=process_name%3Arundll32.exe%20AND%20cmdline%3A%94mshtml%2Crunhtmlapplication%94"
+            "search_query": "cb.urlver=1&q=process_name%3Arundll32.exe%20AND%20cmdline%3A%94mshtml%2Crunhtmlapplication%94%20-alliance_score_deloitteexceptions%3A%5B1%20TO%20%2A%5D"
           }
         ]
       }, 
       "score": 50, 
-      "link": "Local File", 
-      "id": "0f498a9986c8ee46be84600ca7dd3bae"
+      "link": "https://github.com/boingomw/Lazerbearsharkpig/blob/master/pretty_feed_links/DeloitteHunting.tsv", 
+      "id": "8da8784b7cfa7b7a5447f603a4f5b9b3"
     }, 
     {
       "title": "Rundll32 used to run javascript", 
-      "timestamp": 1471016159, 
+      "timestamp": 1471019374, 
       "iocs": {
         "query": [
           {
             "index_type": "events", 
-            "search_query": "cb.urlver=1&q=process_name%3Arundll32.exe%20cmdline%3A%22javascript%3A%5C%22%22"
+            "search_query": "cb.urlver=1&q=process_name%3Arundll32.exe%20cmdline%3A%22javascript%3A%5C%22%22%20-alliance_score_deloitteexceptions%3A%5B1%20TO%20%2A%5D"
           }
         ]
       }, 
       "score": 50, 
-      "link": "Local File", 
-      "id": "da070534da537c521bd8c1a920ec0538"
+      "link": "https://github.com/boingomw/Lazerbearsharkpig/blob/master/pretty_feed_links/DeloitteHunting.tsv", 
+      "id": "4270f449a225db506ea4e24a231195c6"
     }, 
     {
       "title": "Smss started by suspicious process", 
-      "timestamp": 1471016159, 
+      "timestamp": 1471019374, 
       "iocs": {
         "query": [
           {
             "index_type": "events", 
-            "search_query": "cb.urlver=1&q=process_name%3Asmss.exe%20AND%20parent_name%3A%2A%20AND%20-parent_name%3Asmss.exe%20AND%20-parent_name%3Antkrnlpa.exe%20AND%20-parent_name%3Antoskrnl.exe"
+            "search_query": "cb.urlver=1&q=process_name%3Asmss.exe%20AND%20parent_name%3A%2A%20AND%20-parent_name%3Asmss.exe%20AND%20-parent_name%3Antkrnlpa.exe%20AND%20-parent_name%3Antoskrnl.exe%20-alliance_score_deloitteexceptions%3A%5B1%20TO%20%2A%5D"
           }
         ]
       }, 
       "score": 50, 
-      "link": "Local File", 
-      "id": "4b6dc1e039d01c92f1cb7ee45054538a"
+      "link": "https://github.com/boingomw/Lazerbearsharkpig/blob/master/pretty_feed_links/DeloitteHunting.tsv", 
+      "id": "a29670c582d4a50aa933760a8014f364"
     }, 
     {
       "title": "Svchost with unusual username", 
-      "timestamp": 1471016159, 
+      "timestamp": 1471019374, 
       "iocs": {
         "query": [
           {
             "index_type": "events", 
-            "search_query": "cb.urlver=1&q=process_name%3Asvchost.exe%20%28-username%3ASYSTEM%20OR%20-username%3A%22NETWORK%20SERVICE%22%20OR%20-username%3A%22LOCAL%20SERVICE%22%29"
+            "search_query": "cb.urlver=1&q=process_name%3Asvchost.exe%20%28-username%3ASYSTEM%20OR%20-username%3A%22NETWORK%20SERVICE%22%20OR%20-username%3A%22LOCAL%20SERVICE%22%29%20-alliance_score_deloitteexceptions%3A%5B1%20TO%20%2A%5D"
           }
         ]
       }, 
       "score": 50, 
-      "link": "Local File", 
-      "id": "5f9d8abdd80a88c99eaa4edb3e8f8450"
+      "link": "https://github.com/boingomw/Lazerbearsharkpig/blob/master/pretty_feed_links/DeloitteHunting.tsv", 
+      "id": "d4cf0478f15a0da89a83ffc4e41e2c24"
     }, 
     {
       "title": "WMIC usage", 
-      "timestamp": 1471016159, 
+      "timestamp": 1471019374, 
       "iocs": {
         "query": [
           {
             "index_type": "events", 
-            "search_query": "cb.urlver=1&q=process_name%3Awmic.exe"
+            "search_query": "cb.urlver=1&q=process_name%3Awmic.exe%20-alliance_score_deloitteexceptions%3A%5B1%20TO%20%2A%5D"
           }
         ]
       }, 
       "score": 50, 
-      "link": "Local File", 
-      "id": "f3eec4ecc7ab51baea95d767f2ce1385"
+      "link": "https://github.com/boingomw/Lazerbearsharkpig/blob/master/pretty_feed_links/DeloitteHunting.tsv", 
+      "id": "37344992b34e1c905e356056004d6f7e"
     }, 
     {
       "title": "Wscript usage", 
-      "timestamp": 1471016159, 
+      "timestamp": 1471019374, 
       "iocs": {
         "query": [
           {
             "index_type": "events", 
-            "search_query": "cb.urlver=1&q=process_name%3Awscript.exe"
+            "search_query": "cb.urlver=1&q=process_name%3Awscript.exe%20-alliance_score_deloitteexceptions%3A%5B1%20TO%20%2A%5D"
           }
         ]
       }, 
       "score": 50, 
-      "link": "Local File", 
-      "id": "f550764199562e0c2863c238527a47e9"
+      "link": "https://github.com/boingomw/Lazerbearsharkpig/blob/master/pretty_feed_links/DeloitteHunting.tsv", 
+      "id": "45d95d9bc3eb979d1a18e88fe04aab07"
     }, 
     {
       "title": "Registry modification to context menu", 
-      "timestamp": 1471016159, 
+      "timestamp": 1471019374, 
       "iocs": {
         "query": [
           {
             "index_type": "events", 
-            "search_query": "cb.urlver=1&q=regmod%3A%22software%5Cclasses%5C%2A%22%20AND%20regmod%3A%22shellex%5Ccontextmenuhandlers%22"
+            "search_query": "cb.urlver=1&q=regmod%3A%22software%5Cclasses%5C%2A%22%20AND%20regmod%3A%22shellex%5Ccontextmenuhandlers%22%20-alliance_score_deloitteexceptions%3A%5B1%20TO%20%2A%5D"
           }
         ]
       }, 
       "score": 50, 
-      "link": "Local File", 
-      "id": "f6ee9b37092b0ca9afee57a76c232c7f"
+      "link": "https://github.com/boingomw/Lazerbearsharkpig/blob/master/pretty_feed_links/DeloitteHunting.tsv", 
+      "id": "596f8adfbd6cf30b94f1d7cd564a8e34"
     }, 
     {
       "title": "Startup Registry Modification (Run)", 
-      "timestamp": 1471016159, 
+      "timestamp": 1471019374, 
       "iocs": {
         "query": [
           {
             "index_type": "events", 
-            "search_query": "cb.urlver=1&q=regmod%3A%22software%5Cmicrosoft%5Cwindows%5Ccurrentversion%5Crun%22"
+            "search_query": "cb.urlver=1&q=regmod%3A%22software%5Cmicrosoft%5Cwindows%5Ccurrentversion%5Crun%22%20-alliance_score_deloitteexceptions%3A%5B1%20TO%20%2A%5D"
           }
         ]
       }, 
       "score": 50, 
-      "link": "Local File", 
-      "id": "6214677b5ce6702b6a1b6c248ffd0650"
+      "link": "https://github.com/boingomw/Lazerbearsharkpig/blob/master/pretty_feed_links/DeloitteHunting.tsv", 
+      "id": "2cf18924ec71bf77f0718421fdddc1dc"
     }, 
     {
       "title": "Startup Registry Modification (RunOnce)", 
-      "timestamp": 1471016159, 
+      "timestamp": 1471019374, 
       "iocs": {
         "query": [
           {
             "index_type": "events", 
-            "search_query": "cb.urlver=1&q=regmod%3A%22software%5Cmicrosoft%5Cwindows%5Ccurrentversion%5Crunonce%22"
+            "search_query": "cb.urlver=1&q=regmod%3A%22software%5Cmicrosoft%5Cwindows%5Ccurrentversion%5Crunonce%22%20-alliance_score_deloitteexceptions%3A%5B1%20TO%20%2A%5D"
           }
         ]
       }, 
       "score": 50, 
-      "link": "Local File", 
-      "id": "33eb3553ca8b43a233fb0492fcba4f9d"
+      "link": "https://github.com/boingomw/Lazerbearsharkpig/blob/master/pretty_feed_links/DeloitteHunting.tsv", 
+      "id": "1b9c9c129387257c252920bba01fe288"
     }, 
     {
       "title": "Registry modification to Hidden entry by process other than explorer", 
-      "timestamp": 1471016159, 
+      "timestamp": 1471019374, 
       "iocs": {
         "query": [
           {
             "index_type": "events", 
-            "search_query": "cb.urlver=1&q=regmod%3A%5Cregistry%5Cuser%5C%2A%5Csoftware%5Cmicrosoft%5Cwindows%5CCurrentVersion%5CExplorer%5CAdvanced%5CHidden%20And%20-process_name%3Aexplorer.exe"
+            "search_query": "cb.urlver=1&q=regmod%3A%5Cregistry%5Cuser%5C%2A%5Csoftware%5Cmicrosoft%5Cwindows%5CCurrentVersion%5CExplorer%5CAdvanced%5CHidden%20And%20-process_name%3Aexplorer.exe%20-alliance_score_deloitteexceptions%3A%5B1%20TO%20%2A%5D"
           }
         ]
       }, 
       "score": 50, 
-      "link": "Local File", 
-      "id": "a2c3ea94dec25caaa2cc8cfc5e467607"
+      "link": "https://github.com/boingomw/Lazerbearsharkpig/blob/master/pretty_feed_links/DeloitteHunting.tsv", 
+      "id": "a17e67d4b9ecc13ec414beeb4c55e701"
     }, 
     {
       "title": "Registry modification to UILanguages", 
-      "timestamp": 1471016159, 
+      "timestamp": 1471019374, 
       "iocs": {
         "query": [
           {
             "index_type": "events", 
-            "search_query": "cb.urlver=1&q=regmod%3Acontrol%5CMUI%5CUILanguages%5C%2A"
+            "search_query": "cb.urlver=1&q=regmod%3Acontrol%5CMUI%5CUILanguages%5C%2A%20-alliance_score_deloitteexceptions%3A%5B1%20TO%20%2A%5D"
           }
         ]
       }, 
       "score": 50, 
-      "link": "Local File", 
-      "id": "091fdf005e1a58e0db1eda625c50c764"
+      "link": "https://github.com/boingomw/Lazerbearsharkpig/blob/master/pretty_feed_links/DeloitteHunting.tsv", 
+      "id": "6da27113f7c773c1292f11130773c9f6"
     }, 
     {
       "title": "Startup Registry Modification (Run*)", 
-      "timestamp": 1471016159, 
+      "timestamp": 1471019374, 
       "iocs": {
         "query": [
           {
             "index_type": "events", 
-            "search_query": "cb.urlver=1&q=regmod%3ACurrentVersion%5CRun%2A"
+            "search_query": "cb.urlver=1&q=regmod%3ACurrentVersion%5CRun%2A%20-alliance_score_deloitteexceptions%3A%5B1%20TO%20%2A%5D"
           }
         ]
       }, 
       "score": 50, 
-      "link": "Local File", 
-      "id": "65b41e772f12d9f2414b773084f1c733"
+      "link": "https://github.com/boingomw/Lazerbearsharkpig/blob/master/pretty_feed_links/DeloitteHunting.tsv", 
+      "id": "87dc7f15d06a1347865f9329f59f914e"
     }, 
     {
       "title": "Windows Credential Editor usage", 
-      "timestamp": 1471016159, 
+      "timestamp": 1471019374, 
       "iocs": {
         "query": [
           {
             "index_type": "events", 
-            "search_query": "cb.urlver=1&q=process_name%3Awce.exe"
+            "search_query": "cb.urlver=1&q=process_name%3Awce.exe%20-alliance_score_deloitteexceptions%3A%5B1%20TO%20%2A%5D"
           }
         ]
       }, 
       "score": 50, 
-      "link": "Local File", 
-      "id": "9d577a8aa3c63a0202a36c86b7fa6208"
+      "link": "https://github.com/boingomw/Lazerbearsharkpig/blob/master/pretty_feed_links/DeloitteHunting.tsv", 
+      "id": "c0d3ad6c14a217cfed13a5f1619e36eb"
     }, 
     {
       "title": "Powershell creating remote threads", 
-      "timestamp": 1471016159, 
+      "timestamp": 1471019374, 
       "iocs": {
         "query": [
           {
             "index_type": "events", 
-            "search_query": "cb.urlver=1&q=crossproc_type%3A%22remotethread%22%20process_name%3Apowershell.exe"
+            "search_query": "cb.urlver=1&q=crossproc_type%3A%22remotethread%22%20process_name%3Apowershell.exe%20-alliance_score_deloitteexceptions%3A%5B1%20TO%20%2A%5D"
           }
         ]
       }, 
       "score": 50, 
-      "link": "Local File", 
-      "id": "5924fae7809ca6686976c1b12486216c"
+      "link": "https://github.com/boingomw/Lazerbearsharkpig/blob/master/pretty_feed_links/DeloitteHunting.tsv", 
+      "id": "0eddd78751e80ffb7289404d97d46336"
     }, 
     {
-      "title": "Mac-Malware KeRanger", 
-      "timestamp": 1471016159, 
+      "title": "Mac-Malware KeRanger 1", 
+      "timestamp": 1471019374, 
       "iocs": {
         "query": [
           {
             "index_type": "events", 
-            "search_query": "cb.urlver=1&q=process_name%3Akernel_service%20AND%A0childproc_name%3Akernel_service"
+            "search_query": "cb.urlver=1&q=process_name%3Akernel_service%20AND%A0childproc_name%3Akernel_service%20-alliance_score_deloitteexceptions%3A%5B1%20TO%20%2A%5D"
           }
         ]
       }, 
       "score": 50, 
-      "link": "Local File", 
-      "id": "211caf72c9602216236cda3d062ffd0d"
+      "link": "https://github.com/boingomw/Lazerbearsharkpig/blob/master/pretty_feed_links/DeloitteHunting.tsv", 
+      "id": "8291fc48220c5eb4caa17e79574cbdfc"
     }, 
     {
-      "title": "Mac-Malware KeRanger", 
-      "timestamp": 1471016159, 
+      "title": "Mac-Malware KeRanger 2", 
+      "timestamp": 1471019374, 
       "iocs": {
         "query": [
           {
             "index_type": "events", 
-            "search_query": "cb.urlver=1&q=process_name%3ATransmission%20AND%20filemod%3Akernel_service"
+            "search_query": "cb.urlver=1&q=process_name%3ATransmission%20AND%20filemod%3Akernel_service%20-alliance_score_deloitteexceptions%3A%5B1%20TO%20%2A%5D"
           }
         ]
       }, 
       "score": 50, 
-      "link": "Local File", 
-      "id": "b871daa10f344fbdcd8db4e89b6e2916"
+      "link": "https://github.com/boingomw/Lazerbearsharkpig/blob/master/pretty_feed_links/DeloitteHunting.tsv", 
+      "id": "f1b679ac9701f14df0eede491b6ce69c"
     }, 
     {
-      "title": "Mac-Malware KeRanger", 
-      "timestamp": 1471016159, 
+      "title": "Mac-Malware KeRanger 3", 
+      "timestamp": 1471019374, 
       "iocs": {
         "query": [
           {
             "index_type": "events", 
-            "search_query": "cb.urlver=1&q=filemod%3A.kernel_pid%20AND%20filemod%3Akernel_time"
+            "search_query": "cb.urlver=1&q=filemod%3A.kernel_pid%20AND%20filemod%3Akernel_time%20-alliance_score_deloitteexceptions%3A%5B1%20TO%20%2A%5D"
           }
         ]
       }, 
       "score": 50, 
-      "link": "Local File", 
-      "id": "041dafc9f79f8df71b1e58861fe54a18"
+      "link": "https://github.com/boingomw/Lazerbearsharkpig/blob/master/pretty_feed_links/DeloitteHunting.tsv", 
+      "id": "ee04bda44525e6255d6f9448bf37bc3f"
     }, 
     {
-      "title": "Mac-Active Malware", 
-      "timestamp": 1471016159, 
+      "title": "Mac-Active Malware Ransomware", 
+      "timestamp": 1471019374, 
       "iocs": {
         "query": [
           {
             "index_type": "events", 
-            "search_query": "cb.urlver=1&q=filemod_count%3A%5B5000%20TO%20%2A%5D%20-process_name%3A%22Google%20Chrome%22%20-process_name%3Aditto%20-process_name%3Ainstalld%20-process_name%3Abackupd%20-process_name%3Amds"
+            "search_query": "cb.urlver=1&q=filemod_count%3A%5B5000%20TO%20%2A%5D%20-process_name%3A%22Google%20Chrome%22%20-process_name%3Aditto%20-process_name%3Ainstalld%20-process_name%3Abackupd%20-process_name%3Amds%20-alliance_score_deloitteexceptions%3A%5B1%20TO%20%2A%5D"
           }
         ]
       }, 
       "score": 50, 
-      "link": "Local File", 
-      "id": "11809fa736380d0544e95af6451bc033"
+      "link": "https://github.com/boingomw/Lazerbearsharkpig/blob/master/pretty_feed_links/DeloitteHunting.tsv", 
+      "id": "dd8c5a3bef92425fadff5e88cd0d74fb"
     }, 
     {
-      "title": "Mac-Odd commands", 
-      "timestamp": 1471016159, 
+      "title": "Mac-Odd commands dscl 1", 
+      "timestamp": 1471019374, 
       "iocs": {
         "query": [
           {
             "index_type": "events", 
-            "search_query": "cb.urlver=1&q=os_type%3A%22osx%22%20cmdline%3A%22dscl%20.read%20%2FUsers%22%20cmdline%3AdsAttrTypeNative%3AShadowHashData%20"
+            "search_query": "cb.urlver=1&q=os_type%3A%22osx%22%20cmdline%3A%22dscl%20.read%20%2FUsers%22%20cmdline%3AdsAttrTypeNative%3AShadowHashData%20%20-alliance_score_deloitteexceptions%3A%5B1%20TO%20%2A%5D"
           }
         ]
       }, 
       "score": 50, 
-      "link": "Local File", 
-      "id": "8d2ea4bf30a1ae327cf73ab31c907161"
+      "link": "https://github.com/boingomw/Lazerbearsharkpig/blob/master/pretty_feed_links/DeloitteHunting.tsv", 
+      "id": "9ed16fe24287d52b7c1d864bcf0780be"
     }, 
     {
-      "title": "Mac-Odd commands", 
-      "timestamp": 1471016159, 
+      "title": "Mac-Odd commands dscl 2", 
+      "timestamp": 1471019374, 
       "iocs": {
         "query": [
           {
             "index_type": "events", 
-            "search_query": "cb.urlver=1&q=os_type%3A%22osx%22%20cmdline%3A%22dscl%20.read%20%2FUsers%22"
+            "search_query": "cb.urlver=1&q=os_type%3A%22osx%22%20cmdline%3A%22dscl%20.read%20%2FUsers%22%20-alliance_score_deloitteexceptions%3A%5B1%20TO%20%2A%5D"
           }
         ]
       }, 
       "score": 50, 
-      "link": "Local File", 
-      "id": "59c64cc48f6fd5983be1963176b1dec0"
+      "link": "https://github.com/boingomw/Lazerbearsharkpig/blob/master/pretty_feed_links/DeloitteHunting.tsv", 
+      "id": "3e8b4d8a08c8de178308b3fb390d35de"
     }, 
     {
-      "title": "Mac-Odd commands", 
-      "timestamp": 1471016159, 
+      "title": "Mac-Odd commands dscl 3", 
+      "timestamp": 1471019374, 
       "iocs": {
         "query": [
           {
             "index_type": "events", 
-            "search_query": "cb.urlver=1&q=os_type%3A%22osx%22%20cmdline%3A%22dscl%20localhost%20-passwd%20%2FSearch%2FUsers%2F%22%20"
+            "search_query": "cb.urlver=1&q=os_type%3A%22osx%22%20cmdline%3A%22dscl%20localhost%20-passwd%20%2FSearch%2FUsers%2F%22%20%20-alliance_score_deloitteexceptions%3A%5B1%20TO%20%2A%5D"
           }
         ]
       }, 
       "score": 50, 
-      "link": "Local File", 
-      "id": "2567632553e6d28ef66b3263cb33c5c1"
+      "link": "https://github.com/boingomw/Lazerbearsharkpig/blob/master/pretty_feed_links/DeloitteHunting.tsv", 
+      "id": "b1af4574e0ef0b1d097259e2eb56d3dc"
     }, 
     {
-      "title": "Mac-Odd commands", 
-      "timestamp": 1471016159, 
+      "title": "Mac-Odd commands chmod 1", 
+      "timestamp": 1471019374, 
       "iocs": {
         "query": [
           {
             "index_type": "events", 
-            "search_query": "cb.urlver=1&q=os_type%3A%22osx%22%20cmdline%3A%22chmod%20%2Bs%20%22%20OR%20cmdline%3A%22%2Fbin%2Fchmod%20%2Bs%22"
+            "search_query": "cb.urlver=1&q=os_type%3A%22osx%22%20cmdline%3A%22chmod%20%2Bs%20%22%20OR%20cmdline%3A%22%2Fbin%2Fchmod%20%2Bs%22%20-alliance_score_deloitteexceptions%3A%5B1%20TO%20%2A%5D"
           }
         ]
       }, 
       "score": 50, 
-      "link": "Local File", 
-      "id": "5d399f2e4e35392b15a10f0d9eef9171"
+      "link": "https://github.com/boingomw/Lazerbearsharkpig/blob/master/pretty_feed_links/DeloitteHunting.tsv", 
+      "id": "d2af9ecfb42f0417157da72e6f9e658b"
     }, 
     {
-      "title": "Mac-Odd Paths", 
-      "timestamp": 1471016159, 
+      "title": "Mac-Odd Paths trashes", 
+      "timestamp": 1471019374, 
       "iocs": {
         "query": [
           {
             "index_type": "events", 
-            "search_query": "cb.urlver=1&q=os_type%3A%22osx%22%20path%3A.Trashes%2F%2A"
+            "search_query": "cb.urlver=1&q=os_type%3A%22osx%22%20path%3A.Trashes%2F%2A%20-alliance_score_deloitteexceptions%3A%5B1%20TO%20%2A%5D"
           }
         ]
       }, 
       "score": 50, 
-      "link": "Local File", 
-      "id": "88ec50251e6d7047c859c13298422056"
+      "link": "https://github.com/boingomw/Lazerbearsharkpig/blob/master/pretty_feed_links/DeloitteHunting.tsv", 
+      "id": "365f0e3ac4bfd2084609be730f0638fb"
     }, 
     {
-      "title": "Mac-Odd Paths", 
-      "timestamp": 1471016159, 
+      "title": "Mac-Odd Paths trashes with netcon", 
+      "timestamp": 1471019374, 
       "iocs": {
         "query": [
           {
             "index_type": "events", 
-            "search_query": "cb.urlver=1&q=os_type%3A%22osx%22%20path%3A.Trashes%2F%2A%20netconn_count%3A%5B1%20TO%20%2A%5D%20"
+            "search_query": "cb.urlver=1&q=os_type%3A%22osx%22%20path%3A.Trashes%2F%2A%20netconn_count%3A%5B1%20TO%20%2A%5D%20%20-alliance_score_deloitteexceptions%3A%5B1%20TO%20%2A%5D"
           }
         ]
       }, 
       "score": 50, 
-      "link": "Local File", 
-      "id": "9861bec5bf214ec7bdef2f72254111c6"
+      "link": "https://github.com/boingomw/Lazerbearsharkpig/blob/master/pretty_feed_links/DeloitteHunting.tsv", 
+      "id": "808f141d8d5bea00d5acb1bdf52bc7fe"
     }, 
     {
-      "title": "Mac-Odd Paths", 
-      "timestamp": 1471016159, 
+      "title": "Mac-Odd Paths Trash", 
+      "timestamp": 1471019374, 
       "iocs": {
         "query": [
           {
             "index_type": "events", 
-            "search_query": "cb.urlver=1&q=os_type%3A%22osx%22%20path%3A.Trash%2F%2A"
+            "search_query": "cb.urlver=1&q=os_type%3A%22osx%22%20path%3A.Trash%2F%2A%20-alliance_score_deloitteexceptions%3A%5B1%20TO%20%2A%5D"
           }
         ]
       }, 
       "score": 50, 
-      "link": "Local File", 
-      "id": "1e7c706d7c72ac390ff9ea43b3fcaba6"
+      "link": "https://github.com/boingomw/Lazerbearsharkpig/blob/master/pretty_feed_links/DeloitteHunting.tsv", 
+      "id": "00d4c6b0d262682a8214d37a791d1a6b"
     }, 
     {
-      "title": "Mac-Odd Paths", 
-      "timestamp": 1471016159, 
+      "title": "Mac-Odd Paths Trash with netcon", 
+      "timestamp": 1471019374, 
       "iocs": {
         "query": [
           {
             "index_type": "events", 
-            "search_query": "cb.urlver=1&q=os_type%3A%22osx%22%20path%3A.Trash%2F%2A%20netconn_count%3A%5B1%20TO%20%2A%5D%20"
+            "search_query": "cb.urlver=1&q=os_type%3A%22osx%22%20path%3A.Trash%2F%2A%20netconn_count%3A%5B1%20TO%20%2A%5D%20%20-alliance_score_deloitteexceptions%3A%5B1%20TO%20%2A%5D"
           }
         ]
       }, 
       "score": 50, 
-      "link": "Local File", 
-      "id": "5f09518553c3397d4ac9e8a74e9d7af6"
+      "link": "https://github.com/boingomw/Lazerbearsharkpig/blob/master/pretty_feed_links/DeloitteHunting.tsv", 
+      "id": "070f83a75245f9b7cb6f4ed4d01a0873"
     }, 
     {
-      "title": "Mac-Odd Parents", 
-      "timestamp": 1471016159, 
+      "title": "Mac-Odd Parents firefox", 
+      "timestamp": 1471019374, 
       "iocs": {
         "query": [
           {
             "index_type": "events", 
-            "search_query": "cb.urlver=1&q=os_type%3A%22osx%22%20process_name%3Ash%20parent_process%3AFirefox"
+            "search_query": "cb.urlver=1&q=os_type%3A%22osx%22%20process_name%3Ash%20parent_process%3AFirefox%20-alliance_score_deloitteexceptions%3A%5B1%20TO%20%2A%5D"
           }
         ]
       }, 
       "score": 50, 
-      "link": "Local File", 
-      "id": "99f40b29aec3a7e4cad1dbdbe002799d"
+      "link": "https://github.com/boingomw/Lazerbearsharkpig/blob/master/pretty_feed_links/DeloitteHunting.tsv", 
+      "id": "1f9bbd180e935b2e99dd63f7bea518cd"
     }, 
     {
-      "title": "Mac-Odd Parents", 
-      "timestamp": 1471016159, 
+      "title": "Mac-Odd Parents safari", 
+      "timestamp": 1471019374, 
       "iocs": {
         "query": [
           {
             "index_type": "events", 
-            "search_query": "cb.urlver=1&q=os_type%3A%22osx%22%20process_name%3Ash%20parent_process%3ASafari"
+            "search_query": "cb.urlver=1&q=os_type%3A%22osx%22%20process_name%3Ash%20parent_process%3ASafari%20-alliance_score_deloitteexceptions%3A%5B1%20TO%20%2A%5D"
           }
         ]
       }, 
       "score": 50, 
-      "link": "Local File", 
-      "id": "8c3fb182048386f7e923ab54a5559867"
+      "link": "https://github.com/boingomw/Lazerbearsharkpig/blob/master/pretty_feed_links/DeloitteHunting.tsv", 
+      "id": "2a0395a78ba5c14a6f9456a529369408"
     }, 
     {
-      "title": "Mac-Odd Parents", 
-      "timestamp": 1471016159, 
+      "title": "Mac-Odd Parents chrome", 
+      "timestamp": 1471019374, 
       "iocs": {
         "query": [
           {
             "index_type": "events", 
-            "search_query": "cb.urlver=1&q=os_type%3A%22osx%22%20process_name%3Ash%20parent_name%3A%22Google%20Chrome%22%20"
+            "search_query": "cb.urlver=1&q=os_type%3A%22osx%22%20process_name%3Ash%20parent_name%3A%22Google%20Chrome%22%20%20-alliance_score_deloitteexceptions%3A%5B1%20TO%20%2A%5D"
           }
         ]
       }, 
       "score": 50, 
-      "link": "Local File", 
-      "id": "66a97eca1371d5561a55f94ce2d00b31"
+      "link": "https://github.com/boingomw/Lazerbearsharkpig/blob/master/pretty_feed_links/DeloitteHunting.tsv", 
+      "id": "e588c9264911cf60bc8437ad2f0ce26f"
     }, 
     {
-      "title": "Mac-Odd commands", 
-      "timestamp": 1471016159, 
+      "title": "Mac-Odd commands who", 
+      "timestamp": 1471019374, 
       "iocs": {
         "query": [
           {
             "index_type": "events", 
-            "search_query": "cb.urlver=1&q=os_type%3A%22osx%22%20process_name%3Awho"
+            "search_query": "cb.urlver=1&q=os_type%3A%22osx%22%20process_name%3Awho%20-alliance_score_deloitteexceptions%3A%5B1%20TO%20%2A%5D"
           }
         ]
       }, 
       "score": 50, 
-      "link": "Local File", 
-      "id": "6a3e60aaea5ef5f0c62ba9ed886dbe40"
+      "link": "https://github.com/boingomw/Lazerbearsharkpig/blob/master/pretty_feed_links/DeloitteHunting.tsv", 
+      "id": "0b2b4f71abe8f748594174963a84dee8"
     }, 
     {
-      "title": "Mac-Odd commands", 
-      "timestamp": 1471016159, 
+      "title": "Mac-Odd commands id", 
+      "timestamp": 1471019374, 
       "iocs": {
         "query": [
           {
             "index_type": "events", 
-            "search_query": "cb.urlver=1&q=os_type%3A%22osx%22%20process_name%3Aid"
+            "search_query": "cb.urlver=1&q=os_type%3A%22osx%22%20process_name%3Aid%20-alliance_score_deloitteexceptions%3A%5B1%20TO%20%2A%5D"
           }
         ]
       }, 
       "score": 50, 
-      "link": "Local File", 
-      "id": "4cad11b4220451e43ece95a211881377"
+      "link": "https://github.com/boingomw/Lazerbearsharkpig/blob/master/pretty_feed_links/DeloitteHunting.tsv", 
+      "id": "2c0c69385af4cc6a675becbad6f442d9"
     }, 
     {
-      "title": "Mac-Odd commands", 
-      "timestamp": 1471016159, 
+      "title": "Mac-Odd commands printf", 
+      "timestamp": 1471019374, 
       "iocs": {
         "query": [
           {
             "index_type": "events", 
-            "search_query": "cb.urlver=1&q=os_type%3A%22osx%22%20process_name%3Aprintf"
+            "search_query": "cb.urlver=1&q=os_type%3A%22osx%22%20process_name%3Aprintf%20-alliance_score_deloitteexceptions%3A%5B1%20TO%20%2A%5D"
           }
         ]
       }, 
       "score": 50, 
-      "link": "Local File", 
-      "id": "0cf74e01816f7b7553a4558318551c0d"
+      "link": "https://github.com/boingomw/Lazerbearsharkpig/blob/master/pretty_feed_links/DeloitteHunting.tsv", 
+      "id": "d932302467ae35572a35d9af29a816f3"
     }, 
     {
-      "title": "Mac-Odd commands", 
-      "timestamp": 1471016159, 
+      "title": "Mac-Odd commands telnet", 
+      "timestamp": 1471019374, 
       "iocs": {
         "query": [
           {
             "index_type": "events", 
-            "search_query": "cb.urlver=1&q=os_type%3A%22osx%22%20process_name%3Atelnet"
+            "search_query": "cb.urlver=1&q=os_type%3A%22osx%22%20process_name%3Atelnet%20-alliance_score_deloitteexceptions%3A%5B1%20TO%20%2A%5D"
           }
         ]
       }, 
       "score": 50, 
-      "link": "Local File", 
-      "id": "d970a861575216547bf05663e6876d14"
+      "link": "https://github.com/boingomw/Lazerbearsharkpig/blob/master/pretty_feed_links/DeloitteHunting.tsv", 
+      "id": "3b6484c33ec2352809670cf8d7d3c01a"
     }, 
     {
-      "title": "Mac-Odd commands", 
-      "timestamp": 1471016159, 
+      "title": "Mac-Odd commands dscl, any", 
+      "timestamp": 1471019374, 
       "iocs": {
         "query": [
           {
             "index_type": "events", 
-            "search_query": "cb.urlver=1&q=os_type%3A%22osx%22%20process_name%3Adscl"
+            "search_query": "cb.urlver=1&q=os_type%3A%22osx%22%20process_name%3Adscl%20-alliance_score_deloitteexceptions%3A%5B1%20TO%20%2A%5D"
           }
         ]
       }, 
       "score": 50, 
-      "link": "Local File", 
-      "id": "8af487da118bc784d3e8bb5213818ea8"
+      "link": "https://github.com/boingomw/Lazerbearsharkpig/blob/master/pretty_feed_links/DeloitteHunting.tsv", 
+      "id": "d0114c405991ec3b6d439357b5d4b5ff"
+    }, 
+    {
+      "title": "Mac-Odd Actions chrome", 
+      "timestamp": 1471019374, 
+      "iocs": {
+        "query": [
+          {
+            "index_type": "events", 
+            "search_query": "cb.urlver=1&q=os_type%3A%22osx%22%20filemod%3AApplication%5C%20Support%2FGoogle%2FChrome%2FDefault%2FPreferences%20AND%20filemod%3AApplication%5C%20Support%2FGoogle%2FChrome%2FDefault%2FExtensions%2F%2A%2Fmanifest.json%20and%20-path%3A%22%2FApplications%2FGoogle%20Chrome.app%2FContents%2FMacOS%2FGoogle%20Chrome%22%20AND%20-path%3A%2FSystem%2FLibrary%2FFrameworks%2FCoreServices.framework%2FVersions%2FA%2FFrameworks%2FMetadata.framework%2FVersions%2FA%2FSupport%2Fmds%20-alliance_score_deloitteexceptions%3A%5B1%20TO%20%2A%5D"
+          }
+        ]
+      }, 
+      "score": 50, 
+      "link": "https://github.com/boingomw/Lazerbearsharkpig/blob/master/pretty_feed_links/DeloitteHunting.tsv", 
+      "id": "d8025b0dc8f54e37585a746a4625a68e"
     }, 
     {
       "title": "Mac-Odd Actions", 
-      "timestamp": 1471016159, 
+      "timestamp": 1471019374, 
       "iocs": {
         "query": [
           {
             "index_type": "events", 
-            "search_query": "cb.urlver=1&q=os_type%3A%22osx%22%20filemod%3AApplication%5C%20Support%2FGoogle%2FChrome%2FDefault%2FPreferences%20AND%20filemod%3AApplication%5C%20Support%2FGoogle%2FChrome%2FDefault%2FExtensions%2F%2A%2Fmanifest.json%20and%20-path%3A%22%2FApplications%2FGoogle%20Chrome.app%2FContents%2FMacOS%2FGoogle%20Chrome%22%20AND%20-path%3A%2FSystem%2FLibrary%2FFrameworks%2FCoreServices.framework%2FVersions%2FA%2FFrameworks%2FMetadata.framework%2FVersions%2FA%2FSupport%2Fmds"
+            "search_query": "cb.urlver=1&q=os_type%3A%22osx%22%20filemod%3ALibrary%2FSafari%2FExtensions%20and%20filemod%3ALibrary%2FSafari%2FExtensions%2Fextension.safariextz%20-alliance_score_deloitteexceptions%3A%5B1%20TO%20%2A%5D"
           }
         ]
       }, 
       "score": 50, 
-      "link": "Local File", 
-      "id": "90ecf4bfe6e9c6872c5e5a65c56c5250"
-    }, 
-    {
-      "title": "Mac-Odd Actions", 
-      "timestamp": 1471016159, 
-      "iocs": {
-        "query": [
-          {
-            "index_type": "events", 
-            "search_query": "cb.urlver=1&q=os_type%3A%22osx%22%20filemod%3ALibrary%2FSafari%2FExtensions%20and%20filemod%3ALibrary%2FSafari%2FExtensions%2Fextension.safariextz"
-          }
-        ]
-      }, 
-      "score": 50, 
-      "link": "Local File", 
-      "id": "62a4c6bee84cf835da275b5cf21e16fe"
+      "link": "https://github.com/boingomw/Lazerbearsharkpig/blob/master/pretty_feed_links/DeloitteHunting.tsv", 
+      "id": "22d194fd75f1fdb6f49233f238b26973"
     }
   ]
 }

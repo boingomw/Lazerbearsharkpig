@@ -59,7 +59,7 @@ def build_reports(queries):
 
     for q in queries:
         m = hashlib.md5()
-        m.update(q['query'] + q['title'])
+        m.update(q['link'] + q['title'])
         report_id = m.hexdigest()
         fields = {'iocs': {
                 'query': [
